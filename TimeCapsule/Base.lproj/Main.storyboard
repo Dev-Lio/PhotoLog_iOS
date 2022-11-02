@@ -35,6 +35,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mT-jZ-oHh">
+                                <rect key="frame" x="177.5" y="599" width="59.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <segue destination="tAi-VX-gxL" kind="show" id="Dm4-2O-J8G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -43,8 +51,10 @@
                             <constraint firstItem="qzi-AL-YCd" firstAttribute="top" secondItem="W2L-UR-XyK" secondAttribute="bottom" constant="50" id="3x6-Hu-bpQ"/>
                             <constraint firstItem="W2L-UR-XyK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9UD-52-vkt"/>
                             <constraint firstItem="t5h-aH-2my" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RyL-Se-RE6"/>
+                            <constraint firstItem="5mT-jZ-oHh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iDI-Wx-CAV"/>
                             <constraint firstItem="qzi-AL-YCd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lnD-SF-9UI"/>
                             <constraint firstItem="W2L-UR-XyK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xFJ-Tc-Nvg"/>
+                            <constraint firstItem="5mT-jZ-oHh" firstAttribute="top" secondItem="qzi-AL-YCd" secondAttribute="bottom" constant="30" id="xc5-s2-bcq"/>
                         </constraints>
                     </view>
                     <connections>
@@ -55,6 +65,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="m6y-dW-cZS">
+            <objects>
+                <viewController id="tAi-VX-gxL" customClass="LoginViewController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aq0-8V-0xy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4ru-G6-dFo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LEF-rV-W05"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="944-JK-tJ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="110"/>
         </scene>
     </scenes>
     <resources>

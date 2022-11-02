@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         lbTitle.text = "TimeCapsule"
-        lbContent.text = "Git Test"
+        lbContent.text = "Main Page"
         
     }
 

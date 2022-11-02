@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320FD9EC29129C5800862956 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320FD9EB29129C5800862956 /* LoginViewController.swift */; };
 		32456FF8291100AC005BDAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32456FF7291100AC005BDAEC /* AppDelegate.swift */; };
 		32456FFA291100AC005BDAEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32456FF9291100AC005BDAEC /* SceneDelegate.swift */; };
 		32456FFC291100AC005BDAEC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32456FFB291100AC005BDAEC /* MainViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		320FD9EB29129C5800862956 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		32456FF4291100AC005BDAEC /* TimeCapsule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCapsule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32456FF7291100AC005BDAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32456FF9291100AC005BDAEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		320FD9ED29129C5F00862956 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32456FFB291100AC005BDAEC /* MainViewController.swift */,
+				320FD9EB29129C5800862956 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		32456FEB291100AC005BDAEC = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +67,9 @@
 		32456FF6291100AC005BDAEC /* TimeCapsule */ = {
 			isa = PBXGroup;
 			children = (
+				320FD9ED29129C5F00862956 /* View */,
 				32456FF7291100AC005BDAEC /* AppDelegate.swift */,
 				32456FF9291100AC005BDAEC /* SceneDelegate.swift */,
-				32456FFB291100AC005BDAEC /* MainViewController.swift */,
 				32456FFD291100AC005BDAEC /* Main.storyboard */,
 				32457000291100AD005BDAEC /* Assets.xcassets */,
 				32457002291100AD005BDAEC /* LaunchScreen.storyboard */,
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320FD9EC29129C5800862956 /* LoginViewController.swift in Sources */,
 				32456FFC291100AC005BDAEC /* MainViewController.swift in Sources */,
 				32456FF8291100AC005BDAEC /* AppDelegate.swift in Sources */,
 				32456FFA291100AC005BDAEC /* SceneDelegate.swift in Sources */,
