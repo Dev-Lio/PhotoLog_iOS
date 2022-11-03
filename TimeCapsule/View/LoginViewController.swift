@@ -15,4 +15,8 @@ class LoginViewController: UIViewController {
         
     }
     
+    @IBAction func loginAction(_ sender: UIButton) {
+        
+        print("login")
+    }
 }
