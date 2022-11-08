@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		320FD9EC29129C5800862956 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320FD9EB29129C5800862956 /* LoginViewController.swift */; };
 		320FD9F12913B7D600862956 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320FD9F02913B7D600862956 /* MainTabbarController.swift */; };
 		32456FF8291100AC005BDAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32456FF7291100AC005BDAEC /* AppDelegate.swift */; };
 		32456FFA291100AC005BDAEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32456FF9291100AC005BDAEC /* SceneDelegate.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		320FD9EB29129C5800862956 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		320FD9F02913B7D600862956 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
 		32456FF4291100AC005BDAEC /* TimeCapsule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCapsule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32456FF7291100AC005BDAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				32456FFB291100AC005BDAEC /* MainViewController.swift */,
-				320FD9EB29129C5800862956 /* LoginViewController.swift */,
 				320FD9F02913B7D600862956 /* MainTabbarController.swift */,
 			);
 			path = View;
@@ -152,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				320FD9EC29129C5800862956 /* LoginViewController.swift in Sources */,
 				32456FFC291100AC005BDAEC /* MainViewController.swift in Sources */,
 				320FD9F12913B7D600862956 /* MainTabbarController.swift in Sources */,
 				32456FF8291100AC005BDAEC /* AppDelegate.swift in Sources */,
