@@ -17,6 +17,9 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
         
        print("login")
+        print("appleLogin")
+        print("kakaoLogin")
+        print("googleLogin")
         
     }
 }
