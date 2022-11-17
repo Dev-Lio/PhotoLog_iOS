@@ -12,7 +12,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalTransitionStyle="partialCurl" id="BYZ-38-t0r" customClass="MainViewController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" modalTransitionStyle="partialCurl" id="BYZ-38-t0r" customClass="MainViewController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,16 +36,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mT-jZ-oHh">
-                                <rect key="frame" x="177.5" y="599" width="59.5" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
-                                <connections>
-                                    <segue destination="Y2A-t9-UzT" kind="show" id="8eq-Tn-zPB"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDg-gp-GQd">
-                                <rect key="frame" x="50" y="683.5" width="314" height="158.5"/>
+                                <rect key="frame" x="50" y="786" width="314" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Ayf-pg-Brg"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -58,11 +53,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dDg-gp-GQd" secondAttribute="bottom" constant="20" id="PEo-bn-y8x"/>
                             <constraint firstItem="t5h-aH-2my" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RyL-Se-RE6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dDg-gp-GQd" secondAttribute="trailing" constant="50" id="ZmX-gS-fn1"/>
-                            <constraint firstItem="5mT-jZ-oHh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iDI-Wx-CAV"/>
-                            <constraint firstItem="dDg-gp-GQd" firstAttribute="top" secondItem="5mT-jZ-oHh" secondAttribute="bottom" constant="50" id="jqa-fh-QhH"/>
                             <constraint firstItem="qzi-AL-YCd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lnD-SF-9UI"/>
                             <constraint firstItem="W2L-UR-XyK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xFJ-Tc-Nvg"/>
-                            <constraint firstItem="5mT-jZ-oHh" firstAttribute="top" secondItem="qzi-AL-YCd" secondAttribute="bottom" constant="30" id="xc5-s2-bcq"/>
                         </constraints>
                     </view>
                     <connections>
@@ -78,7 +70,7 @@
         <!--Main Tabbar Controller-->
         <scene sceneID="Nfg-HL-NOG">
             <objects>
-                <tabBarController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Y2A-t9-UzT" customClass="MainTabbarController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabbarController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Y2A-t9-UzT" customClass="MainTabbarController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="VEN-3f-9Or"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6qy-gs-YkY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -101,7 +93,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="q5F-TY-Cq1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GRg-h0-r0h">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="LcX-lP-wo8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -117,7 +109,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="K5n-MA-UHL" customClass="AddCapsuleViewController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D4m-4M-wWF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="D1Z-97-9Nx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -133,7 +125,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="OuH-B2-qzM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4IW-x2-eh4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="hIk-b6-Uti"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -149,7 +141,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="q7t-KR-5sI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R7x-jk-6Ym">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Gyy-NY-Pkh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

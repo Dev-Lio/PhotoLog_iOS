@@ -9,7 +9,7 @@ import UIKit
 import AuthenticationServices
 
 class MainViewController: UIViewController, ASAuthorizationControllerPresentationContextProviding, ASAuthorizationControllerDelegate {
-
+    
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var lbContent: UILabel!
     @IBOutlet weak var loginAppleStackView: UIStackView!
@@ -19,6 +19,39 @@ class MainViewController: UIViewController, ASAuthorizationControllerPresentatio
         // Do any additional setup after loading the view.
         
         setupProviderLoginView()
+        
+        checkAutoLogin()
+    }
+    
+    func checkAutoLogin() {
+        // 값이 저장되어있다면 자동 로그인
+        guard let uid = UserDefaults.standard.string(forKey: "uid") else {
+            print("1")
+            return
+        }
+        if login(uid: uid){
+            print("2")
+            showNextPage()
+        } else {
+            // 사용자 정보 없음 새로 로그인 요청
+            print("3")
+        }
+    }
+    
+    func login(uid : String)-> Bool {
+        // 로그인 서버통신 후 사용자 정보 가져오기
+        return true
+    }
+    
+    func showNextPage() {
+        print("4")
+        guard let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabbarController") as? MainTabbarController else {
+            print("5")
+            return }
+        // 화면 전환 애니메이션 설정
+        nextViewController.modalTransitionStyle = .coverVertical
+        print("6")
+        self.present(nextViewController, animated: true, completion: nil)
     }
     
     func setupProviderLoginView() {
@@ -45,30 +78,34 @@ class MainViewController: UIViewController, ASAuthorizationControllerPresentatio
     // Apple ID 연동 성공 시
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         switch authorization.credential {
-        // Apple ID
-        case let appleIDCredential as ASAuthorizationAppleIDCredential:
+            // Apple ID
+            case let appleIDCredential as ASAuthorizationAppleIDCredential:
                 
-            // 계정 정보 가져오기
-            let userIdentifier = appleIDCredential.user
-            let fullName = appleIDCredential.fullName
-            let email = appleIDCredential.email
-            
-            let name = (fullName?.givenName ?? "") + (fullName?.familyName ?? "")
-            let mail = email ?? ""
-            
-            UserDefaults.standard.set(userIdentifier, forKey: "uid")
-            UserDefaults.standard.set(name, forKey: "name")
-            UserDefaults.standard.set(mail, forKey: "email")
+                // 계정 정보 가져오기
+                let userIdentifier = appleIDCredential.user
+                let fullName = appleIDCredential.fullName
+                let email = appleIDCredential.email
                 
-            print("User ID : \(userIdentifier)")
-            print("User Email : \(mail)")
-            print("User Name : \(name)")
-
-        default:
-            break
+                let name = (fullName?.givenName ?? "") + (fullName?.familyName ?? "")
+                let mail = email ?? ""
+                
+                UserDefaults.standard.set(userIdentifier, forKey: "uid")
+                UserDefaults.standard.set(name, forKey: "name")
+                UserDefaults.standard.set(mail, forKey: "email")
+                UserDefaults.standard.set(true, forKey: "autoLogin")
+                
+                print("User ID : \(userIdentifier)")
+                print("User Email : \(mail)")
+                print("User Name : \(name)")
+                
+                showNextPage()
+                
+            default:
+                UserDefaults.standard.set(false, forKey: "autoLogin")
+                break
         }
     }
-        
+    
     // Apple ID 연동 실패 시
     func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
         // Handle error.
