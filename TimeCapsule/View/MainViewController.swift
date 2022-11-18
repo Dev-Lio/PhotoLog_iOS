@@ -26,31 +26,26 @@ class MainViewController: UIViewController, ASAuthorizationControllerPresentatio
     func checkAutoLogin() {
         // 값이 저장되어있다면 자동 로그인
         guard let uid = UserDefaults.standard.string(forKey: "uid") else {
-            print("1")
             return
         }
         if login(uid: uid){
-            print("2")
             showNextPage()
         } else {
             // 사용자 정보 없음 새로 로그인 요청
-            print("3")
         }
     }
     
     func login(uid : String)-> Bool {
         // 로그인 서버통신 후 사용자 정보 가져오기
+        LogUitl.printLog(message:"LogPrint")
         return true
     }
     
     func showNextPage() {
-        print("4")
         guard let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabbarController") as? MainTabbarController else {
-            print("5")
             return }
         // 화면 전환 애니메이션 설정
         nextViewController.modalTransitionStyle = .coverVertical
-        print("6")
         self.present(nextViewController, animated: true, completion: nil)
     }
     
