@@ -9,10 +9,12 @@ import Foundation
 
 class LogUitl {
     
-    var logOn = true
+    static var logOn = true
     
     static func printLog(message : String) {
-        print(message)
+        if logOn {
+            print(message)
+        }
     }
     
 }
