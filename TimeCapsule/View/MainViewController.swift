@@ -32,6 +32,7 @@ class MainViewController: UIViewController, ASAuthorizationControllerPresentatio
             showNextPage()
         } else {
             // 사용자 정보 없음 새로 로그인 요청
+            LogUitl.printLog(message: "로그인 실패")
         }
     }
     
