@@ -17,6 +17,7 @@
 		3269A6092927B88400EFD3B1 /* LogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269A6082927B88400EFD3B1 /* LogUtil.swift */; };
 		32964DF0292470E90054621E /* AddCapsuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964DEF292470E90054621E /* AddCapsuleViewController.swift */; };
 		32964DF3292471500054621E /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964DF2292471500054621E /* ColorUtil.swift */; };
+		32FCA38C292BB79D003A2BD4 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FCA38B292BB79D003A2BD4 /* ShopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		32964DEF292470E90054621E /* AddCapsuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCapsuleViewController.swift; sourceTree = "<group>"; };
 		32964DF2292471500054621E /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		32964DF42924855C0054621E /* TimeCapsule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeCapsule.entitlements; sourceTree = "<group>"; };
+		32FCA38B292BB79D003A2BD4 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 				32456FFB291100AC005BDAEC /* MainViewController.swift */,
 				320FD9F02913B7D600862956 /* MainTabbarController.swift */,
 				32964DEF292470E90054621E /* AddCapsuleViewController.swift */,
+				32FCA38B292BB79D003A2BD4 /* ShopViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				32456FFC291100AC005BDAEC /* MainViewController.swift in Sources */,
 				320FD9F12913B7D600862956 /* MainTabbarController.swift in Sources */,
 				3269A6092927B88400EFD3B1 /* LogUtil.swift in Sources */,
+				32FCA38C292BB79D003A2BD4 /* ShopViewController.swift in Sources */,
 				32964DF3292471500054621E /* ColorUtil.swift in Sources */,
 				32456FF8291100AC005BDAEC /* AppDelegate.swift in Sources */,
 				32456FFA291100AC005BDAEC /* SceneDelegate.swift in Sources */,
