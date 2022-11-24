@@ -12,5 +12,7 @@ class DetailCapsuleViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        print("DetailCapsule")
+        
     }
 }
