@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320F50C12930F82F0081F9C9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320F50C02930F82F0081F9C9 /* FriendsViewController.swift */; };
 		320FD9F12913B7D600862956 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320FD9F02913B7D600862956 /* MainTabbarController.swift */; };
 		32423E25292D0AF900C07617 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32423E24292D0AF900C07617 /* ProfileViewController.swift */; };
 		32456FF8291100AC005BDAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32456FF7291100AC005BDAEC /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		320F50C02930F82F0081F9C9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		320FD9F02913B7D600862956 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
 		32423E24292D0AF900C07617 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		32456FF4291100AC005BDAEC /* TimeCapsule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCapsule.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,7 @@
 				32FCA38B292BB79D003A2BD4 /* ShopViewController.swift */,
 				32423E24292D0AF900C07617 /* ProfileViewController.swift */,
 				329BA309292FB2AB0058197A /* DetailCapsuleViewController.swift */,
+				320F50C02930F82F0081F9C9 /* FriendsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				320FD9F12913B7D600862956 /* MainTabbarController.swift in Sources */,
 				3269A6092927B88400EFD3B1 /* LogUtil.swift in Sources */,
 				32FCA38C292BB79D003A2BD4 /* ShopViewController.swift in Sources */,
+				320F50C12930F82F0081F9C9 /* FriendsViewController.swift in Sources */,
 				32964DF3292471500054621E /* ColorUtil.swift in Sources */,
 				32423E25292D0AF900C07617 /* ProfileViewController.swift in Sources */,
 				32456FF8291100AC005BDAEC /* AppDelegate.swift in Sources */,

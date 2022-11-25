@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// 사용자 프로필 페이지
 class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
