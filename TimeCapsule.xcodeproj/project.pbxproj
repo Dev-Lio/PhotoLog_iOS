@@ -90,7 +90,6 @@
 		32456FF6291100AC005BDAEC /* TimeCapsule */ = {
 			isa = PBXGroup;
 			children = (
-				3269A6072927B86B00EFD3B1 /* Common */,
 				32964DF42924855C0054621E /* TimeCapsule.entitlements */,
 				32964DF1292471400054621E /* Utils */,
 				320FD9ED29129C5F00862956 /* View */,
@@ -104,17 +103,10 @@
 			path = TimeCapsule;
 			sourceTree = "<group>";
 		};
-		3269A6072927B86B00EFD3B1 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				3269A6082927B88400EFD3B1 /* LogUtil.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		32964DF1292471400054621E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3269A6082927B88400EFD3B1 /* LogUtil.swift */,
 				32964DF2292471500054621E /* ColorUtil.swift */,
 			);
 			path = Utils;
