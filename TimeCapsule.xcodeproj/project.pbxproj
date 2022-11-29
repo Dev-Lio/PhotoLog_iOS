@@ -21,6 +21,7 @@
 		32964DF3292471500054621E /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964DF2292471500054621E /* ColorUtil.swift */; };
 		329BA30A292FB2AB0058197A /* DetailCapsuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329BA309292FB2AB0058197A /* DetailCapsuleViewController.swift */; };
 		32BB19312933986800B51DF6 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB19302933986800B51DF6 /* AddFriendViewController.swift */; };
+		32FB73DC293622A0001063DC /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FB73DB293622A0001063DC /* NetworkUtil.swift */; };
 		32FCA38C292BB79D003A2BD4 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FCA38B292BB79D003A2BD4 /* ShopViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		32964DF42924855C0054621E /* TimeCapsule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeCapsule.entitlements; sourceTree = "<group>"; };
 		329BA309292FB2AB0058197A /* DetailCapsuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCapsuleViewController.swift; sourceTree = "<group>"; };
 		32BB19302933986800B51DF6 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
+		32FB73DB293622A0001063DC /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 		32FCA38B292BB79D003A2BD4 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 			children = (
 				3269A6082927B88400EFD3B1 /* LogUtil.swift */,
 				32964DF2292471500054621E /* ColorUtil.swift */,
+				32FB73DB293622A0001063DC /* NetworkUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32FB73DC293622A0001063DC /* NetworkUtil.swift in Sources */,
 				32BB19312933986800B51DF6 /* AddFriendViewController.swift in Sources */,
 				32964DF0292470E90054621E /* AddCapsuleViewController.swift in Sources */,
 				329BA30A292FB2AB0058197A /* DetailCapsuleViewController.swift in Sources */,
