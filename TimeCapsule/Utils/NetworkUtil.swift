@@ -11,7 +11,8 @@ import Foundation
 class NetworkUtil {
     
     static func checkNetworkStatus() {
-        
+     
+        print("checkNetworkStatus")
     }
     
 }
