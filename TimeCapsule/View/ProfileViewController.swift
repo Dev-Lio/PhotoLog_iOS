@@ -17,4 +17,9 @@ class ProfileViewController: UIViewController {
 
         
     }
+    
+    func updateProfileImage() {
+        
+    }
+    
 }
