@@ -20,4 +20,8 @@ class ShopViewController: UIViewController {
     override func viewDidLoad() {
         
     }
+    
+    func buyItem(){
+        
+    }
 }
