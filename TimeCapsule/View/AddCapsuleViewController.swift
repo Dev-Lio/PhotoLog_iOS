@@ -19,4 +19,8 @@ class AddCapsuleViewController: UIViewController {
         
         
     }
+    
+    func addImage(){
+        
+    }
 }
