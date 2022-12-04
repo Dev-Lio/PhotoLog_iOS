@@ -19,4 +19,12 @@ class FriendsViewController: UIViewController {
 
         
     }
+    
+    func addFriend(){
+        
+    }
+    
+    func deleteFriend(){
+        
+    }
 }
