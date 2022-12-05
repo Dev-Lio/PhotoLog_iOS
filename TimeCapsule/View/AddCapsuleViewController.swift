@@ -23,4 +23,10 @@ class AddCapsuleViewController: UIViewController {
     func addImage(){
         
     }
+    
+    func uploadServer(){
+        
+    }
+    
+    
 }
