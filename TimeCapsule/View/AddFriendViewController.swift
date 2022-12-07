@@ -17,4 +17,9 @@ class AddFriendViewController: UIViewController {
 
         
     }
+    
+    func findFriend(){
+        
+    }
+    
 }
