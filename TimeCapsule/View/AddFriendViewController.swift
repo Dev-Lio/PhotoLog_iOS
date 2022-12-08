@@ -25,4 +25,8 @@ class AddFriendViewController: UIViewController {
     func deleteFriend(){
         
     }
+    
+    func getFriendList(){
+        
+    }
 }
