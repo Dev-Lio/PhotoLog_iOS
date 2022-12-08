@@ -22,4 +22,7 @@ class AddFriendViewController: UIViewController {
         
     }
     
+    func deleteFriend(){
+        
+    }
 }
