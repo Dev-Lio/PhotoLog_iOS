@@ -16,52 +16,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="W2L-UR-XyK">
-                                <rect key="frame" x="157" y="398.5" width="100" height="99"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="2V0-vh-1Hk"/>
-                                    <constraint firstAttribute="height" constant="100" id="eYJ-Uh-wVo"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5h-aH-2my">
-                                <rect key="frame" x="207" y="368" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Capsule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzi-AL-YCd">
-                                <rect key="frame" x="155" y="548" width="104" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDg-gp-GQd">
-                                <rect key="frame" x="50" y="786" width="314" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="Ayf-pg-Brg"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="W2L-UR-XyK" firstAttribute="top" secondItem="t5h-aH-2my" secondAttribute="bottom" constant="30" id="20A-Jh-fhb"/>
-                            <constraint firstItem="qzi-AL-YCd" firstAttribute="top" secondItem="W2L-UR-XyK" secondAttribute="bottom" constant="50" id="3x6-Hu-bpQ"/>
-                            <constraint firstItem="W2L-UR-XyK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9UD-52-vkt"/>
-                            <constraint firstItem="dDg-gp-GQd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Fi5-NO-FI1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dDg-gp-GQd" secondAttribute="bottom" constant="20" id="PEo-bn-y8x"/>
-                            <constraint firstItem="t5h-aH-2my" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RyL-Se-RE6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dDg-gp-GQd" secondAttribute="trailing" constant="50" id="ZmX-gS-fn1"/>
-                            <constraint firstItem="qzi-AL-YCd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lnD-SF-9UI"/>
-                            <constraint firstItem="W2L-UR-XyK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xFJ-Tc-Nvg"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="lbContent" destination="qzi-AL-YCd" id="q60-xO-ZLB"/>
-                        <outlet property="lbTitle" destination="t5h-aH-2my" id="kKA-7Q-0ob"/>
-                        <outlet property="loginAppleStackView" destination="dDg-gp-GQd" id="fqg-fP-gov"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,7 +26,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
