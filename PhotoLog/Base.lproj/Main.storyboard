@@ -12,13 +12,13 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" modalTransitionStyle="partialCurl" id="BYZ-38-t0r" customClass="MainViewController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" modalTransitionStyle="partialCurl" id="BYZ-38-t0r" customClass="MainViewController" customModule="PhotoLog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="W2L-UR-XyK">
-                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="W2L-UR-XyK">
+                                <rect key="frame" x="157" y="398.5" width="100" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="2V0-vh-1Hk"/>
                                     <constraint firstAttribute="height" constant="100" id="eYJ-Uh-wVo"/>
@@ -70,7 +70,7 @@
         <!--Main Tabbar Controller-->
         <scene sceneID="Nfg-HL-NOG">
             <objects>
-                <tabBarController storyboardIdentifier="MainTabbarController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Y2A-t9-UzT" customClass="MainTabbarController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabbarController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Y2A-t9-UzT" customClass="MainTabbarController" customModule="PhotoLog" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="VEN-3f-9Or"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6qy-gs-YkY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -107,7 +107,7 @@
         <!--Item 2-->
         <scene sceneID="9Bn-kn-7ZJ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="K5n-MA-UHL" customClass="AddCapsuleViewController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="K5n-MA-UHL" customClass="AddCapsuleViewController" customModule="PhotoLog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D4m-4M-wWF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,9 +155,9 @@
     </scenes>
     <resources>
         <image name="doc" catalog="system" width="115" height="128"/>
-        <image name="icon" width="256" height="256"/>
         <image name="paperplane" catalog="system" width="128" height="119"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
         <image name="tray" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -29,7 +29,7 @@
 		320F50C02930F82F0081F9C9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		320FD9F02913B7D600862956 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
 		32423E24292D0AF900C07617 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		32456FF4291100AC005BDAEC /* TimeCapsule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCapsule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32456FF4291100AC005BDAEC /* PhotoLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32456FF7291100AC005BDAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32456FF9291100AC005BDAEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		32456FFB291100AC005BDAEC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		3269A6082927B88400EFD3B1 /* LogUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtil.swift; sourceTree = "<group>"; };
 		32964DEF292470E90054621E /* AddCapsuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCapsuleViewController.swift; sourceTree = "<group>"; };
 		32964DF2292471500054621E /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
-		32964DF42924855C0054621E /* TimeCapsule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeCapsule.entitlements; sourceTree = "<group>"; };
+		32964DF42924855C0054621E /* PhotoLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoLog.entitlements; sourceTree = "<group>"; };
 		329BA309292FB2AB0058197A /* DetailCapsuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCapsuleViewController.swift; sourceTree = "<group>"; };
 		32BB19302933986800B51DF6 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		32FB73DB293622A0001063DC /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		32456FEB291100AC005BDAEC = {
 			isa = PBXGroup;
 			children = (
-				32456FF6291100AC005BDAEC /* TimeCapsule */,
+				32456FF6291100AC005BDAEC /* PhotoLog */,
 				32456FF5291100AC005BDAEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,15 +84,15 @@
 		32456FF5291100AC005BDAEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32456FF4291100AC005BDAEC /* TimeCapsule.app */,
+				32456FF4291100AC005BDAEC /* PhotoLog.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		32456FF6291100AC005BDAEC /* TimeCapsule */ = {
+		32456FF6291100AC005BDAEC /* PhotoLog */ = {
 			isa = PBXGroup;
 			children = (
-				32964DF42924855C0054621E /* TimeCapsule.entitlements */,
+				32964DF42924855C0054621E /* PhotoLog.entitlements */,
 				32964DF1292471400054621E /* Utils */,
 				320FD9ED29129C5F00862956 /* View */,
 				32456FF7291100AC005BDAEC /* AppDelegate.swift */,
@@ -102,7 +102,7 @@
 				32457002291100AD005BDAEC /* LaunchScreen.storyboard */,
 				32457005291100AD005BDAEC /* Info.plist */,
 			);
-			path = TimeCapsule;
+			path = PhotoLog;
 			sourceTree = "<group>";
 		};
 		32964DF1292471400054621E /* Utils */ = {
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		32456FF3291100AC005BDAEC /* TimeCapsule */ = {
+		32456FF3291100AC005BDAEC /* PhotoLog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32457008291100AD005BDAEC /* Build configuration list for PBXNativeTarget "TimeCapsule" */;
+			buildConfigurationList = 32457008291100AD005BDAEC /* Build configuration list for PBXNativeTarget "PhotoLog" */;
 			buildPhases = (
 				32456FF0291100AC005BDAEC /* Sources */,
 				32456FF1291100AC005BDAEC /* Frameworks */,
@@ -130,9 +130,9 @@
 			);
 			dependencies = (
 			);
-			name = TimeCapsule;
+			name = PhotoLog;
 			productName = TimeCapsule;
-			productReference = 32456FF4291100AC005BDAEC /* TimeCapsule.app */;
+			productReference = 32456FF4291100AC005BDAEC /* PhotoLog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +150,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 32456FEF291100AC005BDAEC /* Build configuration list for PBXProject "TimeCapsule" */;
+			buildConfigurationList = 32456FEF291100AC005BDAEC /* Build configuration list for PBXProject "PhotoLog" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -163,7 +163,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				32456FF3291100AC005BDAEC /* TimeCapsule */,
+				32456FF3291100AC005BDAEC /* PhotoLog */,
 			);
 		};
 /* End PBXProject section */
@@ -343,15 +343,14 @@
 		32457009291100AD005BDAEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TimeCapsule/TimeCapsule.entitlements;
+				CODE_SIGN_ENTITLEMENTS = PhotoLog/PhotoLog.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CR5AN944TA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TimeCapsule/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "타임캡슐";
+				INFOPLIST_FILE = PhotoLog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "포토로그";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -363,7 +362,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.devlio.timecapsule;
+				PRODUCT_BUNDLE_IDENTIFIER = app.devlio.photolog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -377,15 +376,14 @@
 		3245700A291100AD005BDAEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TimeCapsule/TimeCapsule.entitlements;
+				CODE_SIGN_ENTITLEMENTS = PhotoLog/PhotoLog.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CR5AN944TA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TimeCapsule/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "타임캡슐";
+				INFOPLIST_FILE = PhotoLog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "포토로그";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -397,7 +395,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.devlio.timecapsule;
+				PRODUCT_BUNDLE_IDENTIFIER = app.devlio.photolog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -411,7 +409,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		32456FEF291100AC005BDAEC /* Build configuration list for PBXProject "TimeCapsule" */ = {
+		32456FEF291100AC005BDAEC /* Build configuration list for PBXProject "PhotoLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32457006291100AD005BDAEC /* Debug */,
@@ -420,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32457008291100AD005BDAEC /* Build configuration list for PBXNativeTarget "TimeCapsule" */ = {
+		32457008291100AD005BDAEC /* Build configuration list for PBXNativeTarget "PhotoLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32457009291100AD005BDAEC /* Debug */,
