@@ -17,9 +17,9 @@
 		32457001291100AD005BDAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32457000291100AD005BDAEC /* Assets.xcassets */; };
 		32457004291100AD005BDAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32457002291100AD005BDAEC /* LaunchScreen.storyboard */; };
 		3269A6092927B88400EFD3B1 /* LogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269A6082927B88400EFD3B1 /* LogUtil.swift */; };
-		32964DF0292470E90054621E /* AddCapsuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964DEF292470E90054621E /* AddCapsuleViewController.swift */; };
+		32964DF0292470E90054621E /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964DEF292470E90054621E /* AddPhotoViewController.swift */; };
 		32964DF3292471500054621E /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964DF2292471500054621E /* ColorUtil.swift */; };
-		329BA30A292FB2AB0058197A /* DetailCapsuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329BA309292FB2AB0058197A /* DetailCapsuleViewController.swift */; };
+		329BA30A292FB2AB0058197A /* DetailPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329BA309292FB2AB0058197A /* DetailPhotoViewController.swift */; };
 		32BB19312933986800B51DF6 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB19302933986800B51DF6 /* AddFriendViewController.swift */; };
 		32FB73DC293622A0001063DC /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FB73DB293622A0001063DC /* NetworkUtil.swift */; };
 		32FCA38C292BB79D003A2BD4 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FCA38B292BB79D003A2BD4 /* ShopViewController.swift */; };
@@ -38,10 +38,10 @@
 		32457003291100AD005BDAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32457005291100AD005BDAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3269A6082927B88400EFD3B1 /* LogUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtil.swift; sourceTree = "<group>"; };
-		32964DEF292470E90054621E /* AddCapsuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCapsuleViewController.swift; sourceTree = "<group>"; };
+		32964DEF292470E90054621E /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 		32964DF2292471500054621E /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		32964DF42924855C0054621E /* PhotoLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoLog.entitlements; sourceTree = "<group>"; };
-		329BA309292FB2AB0058197A /* DetailCapsuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCapsuleViewController.swift; sourceTree = "<group>"; };
+		329BA309292FB2AB0058197A /* DetailPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoViewController.swift; sourceTree = "<group>"; };
 		32BB19302933986800B51DF6 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		32FB73DB293622A0001063DC /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 		32FCA38B292BB79D003A2BD4 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
@@ -63,10 +63,10 @@
 			children = (
 				32456FFB291100AC005BDAEC /* MainViewController.swift */,
 				320FD9F02913B7D600862956 /* MainTabbarController.swift */,
-				32964DEF292470E90054621E /* AddCapsuleViewController.swift */,
+				32964DEF292470E90054621E /* AddPhotoViewController.swift */,
 				32FCA38B292BB79D003A2BD4 /* ShopViewController.swift */,
 				32423E24292D0AF900C07617 /* ProfileViewController.swift */,
-				329BA309292FB2AB0058197A /* DetailCapsuleViewController.swift */,
+				329BA309292FB2AB0058197A /* DetailPhotoViewController.swift */,
 				320F50C02930F82F0081F9C9 /* FriendsViewController.swift */,
 				32BB19302933986800B51DF6 /* AddFriendViewController.swift */,
 			);
@@ -188,8 +188,8 @@
 			files = (
 				32FB73DC293622A0001063DC /* NetworkUtil.swift in Sources */,
 				32BB19312933986800B51DF6 /* AddFriendViewController.swift in Sources */,
-				32964DF0292470E90054621E /* AddCapsuleViewController.swift in Sources */,
-				329BA30A292FB2AB0058197A /* DetailCapsuleViewController.swift in Sources */,
+				32964DF0292470E90054621E /* AddPhotoViewController.swift in Sources */,
+				329BA30A292FB2AB0058197A /* DetailPhotoViewController.swift in Sources */,
 				32456FFC291100AC005BDAEC /* MainViewController.swift in Sources */,
 				320FD9F12913B7D600862956 /* MainTabbarController.swift in Sources */,
 				3269A6092927B88400EFD3B1 /* LogUtil.swift in Sources */,
