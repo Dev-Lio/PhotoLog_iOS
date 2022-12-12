@@ -13,12 +13,6 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        print("DetailCapsule")
-
-        
-    }
-    
-    func updateProfileImage() {
         
     }
     

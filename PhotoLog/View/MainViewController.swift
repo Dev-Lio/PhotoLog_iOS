@@ -43,11 +43,7 @@ class MainViewController: UIViewController, ASAuthorizationControllerPresentatio
     }
     
     func showNextPage() {
-        guard let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabbarController") as? MainTabbarController else {
-            return }
-        // 화면 전환 애니메이션 설정
-        nextViewController.modalTransitionStyle = .coverVertical
-        self.present(nextViewController, animated: true, completion: nil)
+        
     }
     
     func setupProviderLoginView() {

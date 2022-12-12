@@ -18,7 +18,6 @@
 		32964DF0292470E90054621E /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964DEF292470E90054621E /* AddPhotoViewController.swift */; };
 		32964DF3292471500054621E /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964DF2292471500054621E /* ColorUtil.swift */; };
 		329BA30A292FB2AB0058197A /* DetailPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329BA309292FB2AB0058197A /* DetailPhotoViewController.swift */; };
-		32FB73DC293622A0001063DC /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FB73DB293622A0001063DC /* NetworkUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +35,6 @@
 		32964DF2292471500054621E /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		32964DF42924855C0054621E /* PhotoLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoLog.entitlements; sourceTree = "<group>"; };
 		329BA309292FB2AB0058197A /* DetailPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoViewController.swift; sourceTree = "<group>"; };
-		32FB73DB293622A0001063DC /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 			children = (
 				3269A6082927B88400EFD3B1 /* LogUtil.swift */,
 				32964DF2292471500054621E /* ColorUtil.swift */,
-				32FB73DB293622A0001063DC /* NetworkUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -174,7 +171,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32FB73DC293622A0001063DC /* NetworkUtil.swift in Sources */,
 				32964DF0292470E90054621E /* AddPhotoViewController.swift in Sources */,
 				329BA30A292FB2AB0058197A /* DetailPhotoViewController.swift in Sources */,
 				32456FFC291100AC005BDAEC /* MainViewController.swift in Sources */,
