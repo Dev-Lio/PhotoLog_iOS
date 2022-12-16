@@ -6,16 +6,23 @@
 //
 
 import UIKit
+import expanding_collection
+
 
 class MainViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         
         
     }
-    
+
+    @IBAction func showNext(_ sender: UIButton) {
+         guard let vc = storyboard?.instantiateViewController(withIdentifier: "DemoViewController") else {
+            return
+        }
+        present(vc, animated: true)
+    }
 }
 

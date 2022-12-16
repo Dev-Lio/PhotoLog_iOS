@@ -13,12 +13,17 @@
 		32456FFF291100AC005BDAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32456FFD291100AC005BDAEC /* Main.storyboard */; };
 		32457001291100AD005BDAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32457000291100AD005BDAEC /* Assets.xcassets */; };
 		32457004291100AD005BDAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32457002291100AD005BDAEC /* LaunchScreen.storyboard */; };
+		327B9B2F294BF32E001FA9AE /* DemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327B9B24294BF32E001FA9AE /* DemoTableViewController.swift */; };
+		327B9B30294BF32E001FA9AE /* DemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327B9B27294BF32E001FA9AE /* DemoCollectionViewCell.xib */; };
+		327B9B31294BF32E001FA9AE /* DemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327B9B28294BF32E001FA9AE /* DemoCollectionViewCell.swift */; };
+		327B9B32294BF32E001FA9AE /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327B9B29294BF32E001FA9AE /* DemoViewController.swift */; };
+		327B9B33294BF32E001FA9AE /* AnimationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327B9B2C294BF32E001FA9AE /* AnimationBarButton.swift */; };
+		327B9B34294BF32E001FA9AE /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327B9B2E294BF32E001FA9AE /* Rotatable.swift */; };
 		32AE122D29477459004FC2F6 /* AppleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AE122C29477459004FC2F6 /* AppleLoginViewController.swift */; };
-		4F790C437FCA77A1AF2AFD34 /* Pods_PhotoLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14785E93BBA9E960630FCF7E /* Pods_PhotoLog.framework */; };
+		C942F132D8CE7F51D284A6C6 /* Pods_PhotoLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A55268F825AF5EF0AF53BF /* Pods_PhotoLog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		14785E93BBA9E960630FCF7E /* Pods_PhotoLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32456FF4291100AC005BDAEC /* PhotoLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32456FF7291100AC005BDAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32456FF9291100AC005BDAEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,10 +32,17 @@
 		32457000291100AD005BDAEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32457003291100AD005BDAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32457005291100AD005BDAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327B9B24294BF32E001FA9AE /* DemoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTableViewController.swift; sourceTree = "<group>"; };
+		327B9B27294BF32E001FA9AE /* DemoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCollectionViewCell.xib; sourceTree = "<group>"; };
+		327B9B28294BF32E001FA9AE /* DemoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewCell.swift; sourceTree = "<group>"; };
+		327B9B29294BF32E001FA9AE /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		327B9B2C294BF32E001FA9AE /* AnimationBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationBarButton.swift; sourceTree = "<group>"; };
+		327B9B2E294BF32E001FA9AE /* Rotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
 		32964DF42924855C0054621E /* PhotoLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoLog.entitlements; sourceTree = "<group>"; };
 		32AE122C29477459004FC2F6 /* AppleLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginViewController.swift; sourceTree = "<group>"; };
-		9A3A398D713BE42F401A38CB /* Pods-PhotoLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLog.release.xcconfig"; path = "Target Support Files/Pods-PhotoLog/Pods-PhotoLog.release.xcconfig"; sourceTree = "<group>"; };
-		BCB5B6DC6CB2E10ECAADD97A /* Pods-PhotoLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLog.debug.xcconfig"; path = "Target Support Files/Pods-PhotoLog/Pods-PhotoLog.debug.xcconfig"; sourceTree = "<group>"; };
+		61A55268F825AF5EF0AF53BF /* Pods_PhotoLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		957DCE248137EB30E0F13B9E /* Pods-PhotoLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLog.release.xcconfig"; path = "Target Support Files/Pods-PhotoLog/Pods-PhotoLog.release.xcconfig"; sourceTree = "<group>"; };
+		9C01BBEA7C8412FC00F9740E /* Pods-PhotoLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLog.debug.xcconfig"; path = "Target Support Files/Pods-PhotoLog/Pods-PhotoLog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F790C437FCA77A1AF2AFD34 /* Pods_PhotoLog.framework in Frameworks */,
+				C942F132D8CE7F51D284A6C6 /* Pods_PhotoLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +72,7 @@
 				32456FF6291100AC005BDAEC /* PhotoLog */,
 				32456FF5291100AC005BDAEC /* Products */,
 				FDC0913490019A46FB454DD3 /* Pods */,
-				3F533DD16A91D1E3337F0BF5 /* Frameworks */,
+				83B814E017AB3D862CAFD8A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				32964DF42924855C0054621E /* PhotoLog.entitlements */,
+				327B9B22294BF32E001FA9AE /* ViewControllers */,
+				327B9B2A294BF32E001FA9AE /* Views */,
 				320FD9ED29129C5F00862956 /* View */,
 				32456FF7291100AC005BDAEC /* AppDelegate.swift */,
 				32456FF9291100AC005BDAEC /* SceneDelegate.swift */,
@@ -87,10 +101,71 @@
 			path = PhotoLog;
 			sourceTree = "<group>";
 		};
-		3F533DD16A91D1E3337F0BF5 /* Frameworks */ = {
+		327B9B22294BF32E001FA9AE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				14785E93BBA9E960630FCF7E /* Pods_PhotoLog.framework */,
+				327B9B23294BF32E001FA9AE /* DemoTableViewController */,
+				327B9B25294BF32E001FA9AE /* DemoViewController */,
+			);
+			name = ViewControllers;
+			path = ../../Ramotion/RamotionExpandingCollection/RamotionExpandingCollection/ViewControllers;
+			sourceTree = "<group>";
+		};
+		327B9B23294BF32E001FA9AE /* DemoTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				327B9B24294BF32E001FA9AE /* DemoTableViewController.swift */,
+			);
+			path = DemoTableViewController;
+			sourceTree = "<group>";
+		};
+		327B9B25294BF32E001FA9AE /* DemoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				327B9B26294BF32E001FA9AE /* Cells */,
+				327B9B29294BF32E001FA9AE /* DemoViewController.swift */,
+			);
+			path = DemoViewController;
+			sourceTree = "<group>";
+		};
+		327B9B26294BF32E001FA9AE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				327B9B27294BF32E001FA9AE /* DemoCollectionViewCell.xib */,
+				327B9B28294BF32E001FA9AE /* DemoCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		327B9B2A294BF32E001FA9AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				327B9B2B294BF32E001FA9AE /* AnimatingBarButton */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		327B9B2B294BF32E001FA9AE /* AnimatingBarButton */ = {
+			isa = PBXGroup;
+			children = (
+				327B9B2C294BF32E001FA9AE /* AnimationBarButton.swift */,
+				327B9B2D294BF32E001FA9AE /* Animations */,
+			);
+			path = AnimatingBarButton;
+			sourceTree = "<group>";
+		};
+		327B9B2D294BF32E001FA9AE /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				327B9B2E294BF32E001FA9AE /* Rotatable.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		83B814E017AB3D862CAFD8A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61A55268F825AF5EF0AF53BF /* Pods_PhotoLog.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,10 +173,9 @@
 		FDC0913490019A46FB454DD3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BCB5B6DC6CB2E10ECAADD97A /* Pods-PhotoLog.debug.xcconfig */,
-				9A3A398D713BE42F401A38CB /* Pods-PhotoLog.release.xcconfig */,
+				9C01BBEA7C8412FC00F9740E /* Pods-PhotoLog.debug.xcconfig */,
+				957DCE248137EB30E0F13B9E /* Pods-PhotoLog.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -112,11 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32457008291100AD005BDAEC /* Build configuration list for PBXNativeTarget "PhotoLog" */;
 			buildPhases = (
-				F089FCCE3FCDC86C5ACDAA1A /* [CP] Check Pods Manifest.lock */,
+				6A0868322834B76F2F3FF5B1 /* [CP] Check Pods Manifest.lock */,
 				32456FF0291100AC005BDAEC /* Sources */,
 				32456FF1291100AC005BDAEC /* Frameworks */,
 				32456FF2291100AC005BDAEC /* Resources */,
-				CE53DF3DE4A683494C47FC17 /* [CP] Embed Pods Frameworks */,
+				F70CACFDE7DFF131426BBE28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,30 +242,14 @@
 				32457004291100AD005BDAEC /* LaunchScreen.storyboard in Resources */,
 				32457001291100AD005BDAEC /* Assets.xcassets in Resources */,
 				32456FFF291100AC005BDAEC /* Main.storyboard in Resources */,
+				327B9B30294BF32E001FA9AE /* DemoCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CE53DF3DE4A683494C47FC17 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PhotoLog/Pods-PhotoLog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PhotoLog/Pods-PhotoLog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoLog/Pods-PhotoLog-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F089FCCE3FCDC86C5ACDAA1A /* [CP] Check Pods Manifest.lock */ = {
+		6A0868322834B76F2F3FF5B1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -213,6 +271,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F70CACFDE7DFF131426BBE28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoLog/Pods-PhotoLog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoLog/Pods-PhotoLog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoLog/Pods-PhotoLog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -220,8 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327B9B2F294BF32E001FA9AE /* DemoTableViewController.swift in Sources */,
+				327B9B31294BF32E001FA9AE /* DemoCollectionViewCell.swift in Sources */,
 				32456FFC291100AC005BDAEC /* MainViewController.swift in Sources */,
 				32456FF8291100AC005BDAEC /* AppDelegate.swift in Sources */,
+				327B9B34294BF32E001FA9AE /* Rotatable.swift in Sources */,
+				327B9B33294BF32E001FA9AE /* AnimationBarButton.swift in Sources */,
+				327B9B32294BF32E001FA9AE /* DemoViewController.swift in Sources */,
 				32456FFA291100AC005BDAEC /* SceneDelegate.swift in Sources */,
 				32AE122D29477459004FC2F6 /* AppleLoginViewController.swift in Sources */,
 			);
@@ -367,7 +447,7 @@
 		};
 		32457009291100AD005BDAEC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCB5B6DC6CB2E10ECAADD97A /* Pods-PhotoLog.debug.xcconfig */;
+			baseConfigurationReference = 9C01BBEA7C8412FC00F9740E /* Pods-PhotoLog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PhotoLog/PhotoLog.entitlements;
@@ -401,7 +481,7 @@
 		};
 		3245700A291100AD005BDAEC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A3A398D713BE42F401A38CB /* Pods-PhotoLog.release.xcconfig */;
+			baseConfigurationReference = 957DCE248137EB30E0F13B9E /* Pods-PhotoLog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PhotoLog/PhotoLog.entitlements;
