@@ -1,14 +1,8 @@
-//
-//  DemoCollectionViewCell.swift
-//  TestCollectionView
-//
-//  Created by Alex K. on 12/05/16.
-//  Copyright © 2016 Alex K. All rights reserved.
-//
 
 import UIKit
+import expanding_collection
 
-class DemoCollectionViewCell: BasePageCollectionCell {
+class MainCollectionViewCell: BasePageCollectionCell {
 
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var customTitle: UILabel!

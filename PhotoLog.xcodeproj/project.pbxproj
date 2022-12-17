@@ -7,28 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		323FA8A0294E5E91000934D0 /* AnimationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323FA892294E5E91000934D0 /* AnimationBarButton.swift */; };
-		323FA8A1294E5E91000934D0 /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323FA894294E5E91000934D0 /* Rotatable.swift */; };
-		323FA8A2294E5E91000934D0 /* PhotoLogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323FA897294E5E91000934D0 /* PhotoLogTableViewController.swift */; };
-		323FA8A3294E5E91000934D0 /* PhotoLogCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323FA89C294E5E91000934D0 /* PhotoLogCollectionViewCell.xib */; };
-		323FA8A4294E5E91000934D0 /* PhotoLogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323FA89D294E5E91000934D0 /* PhotoLogCollectionViewCell.swift */; };
-		323FA8A5294E5E91000934D0 /* PhotoLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323FA89E294E5E91000934D0 /* PhotoLogViewController.swift */; };
 		32456FF8291100AC005BDAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32456FF7291100AC005BDAEC /* AppDelegate.swift */; };
 		32456FFA291100AC005BDAEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32456FF9291100AC005BDAEC /* SceneDelegate.swift */; };
 		32456FFF291100AC005BDAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32456FFD291100AC005BDAEC /* Main.storyboard */; };
 		32457001291100AD005BDAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32457000291100AD005BDAEC /* Assets.xcassets */; };
 		32457004291100AD005BDAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32457002291100AD005BDAEC /* LaunchScreen.storyboard */; };
+		3272EAFC294E6F1F0097A3C3 /* AppleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EAFB294E6F1F0097A3C3 /* AppleLoginViewController.swift */; };
+		3272EB01294E6F5C0097A3C3 /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EB00294E6F5C0097A3C3 /* Rotatable.swift */; };
+		3272EB03294E6F6E0097A3C3 /* AnimatingBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EB02294E6F6E0097A3C3 /* AnimatingBarButton.swift */; };
+		3272EB09294E6FDF0097A3C3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EB08294E6FDF0097A3C3 /* MainTableViewController.swift */; };
+		3272EB0B294E6FF50097A3C3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EB0A294E6FF40097A3C3 /* MainViewController.swift */; };
+		3272EB0D294E700B0097A3C3 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EB0C294E700B0097A3C3 /* MainCollectionViewCell.swift */; };
+		3272EB0F294E70590097A3C3 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3272EB0E294E70590097A3C3 /* MainCollectionViewCell.xib */; };
 		C942F132D8CE7F51D284A6C6 /* Pods_PhotoLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A55268F825AF5EF0AF53BF /* Pods_PhotoLog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		323FA892294E5E91000934D0 /* AnimationBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationBarButton.swift; sourceTree = "<group>"; };
-		323FA894294E5E91000934D0 /* Rotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
-		323FA897294E5E91000934D0 /* PhotoLogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLogTableViewController.swift; sourceTree = "<group>"; };
-		323FA89C294E5E91000934D0 /* PhotoLogCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoLogCollectionViewCell.xib; sourceTree = "<group>"; };
-		323FA89D294E5E91000934D0 /* PhotoLogCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLogCollectionViewCell.swift; sourceTree = "<group>"; };
-		323FA89E294E5E91000934D0 /* PhotoLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLogViewController.swift; sourceTree = "<group>"; };
-		323FA8A8294E62FB000934D0 /* AppleLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginViewController.swift; sourceTree = "<group>"; };
 		32456FF4291100AC005BDAEC /* PhotoLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32456FF7291100AC005BDAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32456FF9291100AC005BDAEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +30,13 @@
 		32457000291100AD005BDAEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32457003291100AD005BDAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32457005291100AD005BDAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3272EAFB294E6F1F0097A3C3 /* AppleLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginViewController.swift; sourceTree = "<group>"; };
+		3272EB00294E6F5C0097A3C3 /* Rotatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
+		3272EB02294E6F6E0097A3C3 /* AnimatingBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingBarButton.swift; sourceTree = "<group>"; };
+		3272EB08294E6FDF0097A3C3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		3272EB0A294E6FF40097A3C3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3272EB0C294E700B0097A3C3 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		3272EB0E294E70590097A3C3 /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
 		32964DF42924855C0054621E /* PhotoLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoLog.entitlements; sourceTree = "<group>"; };
 		61A55268F825AF5EF0AF53BF /* Pods_PhotoLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		957DCE248137EB30E0F13B9E /* Pods-PhotoLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLog.release.xcconfig"; path = "Target Support Files/Pods-PhotoLog/Pods-PhotoLog.release.xcconfig"; sourceTree = "<group>"; };
@@ -54,67 +55,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		323FA890294E5E91000934D0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				323FA891294E5E91000934D0 /* AnimatingBarButton */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		323FA891294E5E91000934D0 /* AnimatingBarButton */ = {
-			isa = PBXGroup;
-			children = (
-				323FA892294E5E91000934D0 /* AnimationBarButton.swift */,
-				323FA893294E5E91000934D0 /* Animations */,
-			);
-			path = AnimatingBarButton;
-			sourceTree = "<group>";
-		};
-		323FA893294E5E91000934D0 /* Animations */ = {
-			isa = PBXGroup;
-			children = (
-				323FA894294E5E91000934D0 /* Rotatable.swift */,
-			);
-			path = Animations;
-			sourceTree = "<group>";
-		};
-		323FA895294E5E91000934D0 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				3272EAFA294E648C0097A3C3 /* MainViewController */,
-				323FA8A6294E62FB000934D0 /* AppleLoginViewController */,
-				323FA89F294E5E91000934D0 /* TableViewController */,
-			);
-			name = ViewControllers;
-			path = ../../Ramotion/RamotionExpandingCollection/RamotionExpandingCollection/ViewControllers;
-			sourceTree = "<group>";
-		};
-		323FA89B294E5E91000934D0 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				323FA89C294E5E91000934D0 /* PhotoLogCollectionViewCell.xib */,
-				323FA89D294E5E91000934D0 /* PhotoLogCollectionViewCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		323FA89F294E5E91000934D0 /* TableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				323FA897294E5E91000934D0 /* PhotoLogTableViewController.swift */,
-			);
-			path = TableViewController;
-			sourceTree = "<group>";
-		};
-		323FA8A6294E62FB000934D0 /* AppleLoginViewController */ = {
-			isa = PBXGroup;
-			children = (
-				323FA8A8294E62FB000934D0 /* AppleLoginViewController.swift */,
-			);
-			path = AppleLoginViewController;
-			sourceTree = "<group>";
-		};
 		32456FEB291100AC005BDAEC = {
 			isa = PBXGroup;
 			children = (
@@ -136,8 +76,8 @@
 		32456FF6291100AC005BDAEC /* PhotoLog */ = {
 			isa = PBXGroup;
 			children = (
-				323FA895294E5E91000934D0 /* ViewControllers */,
-				323FA890294E5E91000934D0 /* Views */,
+				3272EB04294E6F870097A3C3 /* ViewControllers */,
+				3272EAFD294E6F360097A3C3 /* Views */,
 				32964DF42924855C0054621E /* PhotoLog.entitlements */,
 				32456FF7291100AC005BDAEC /* AppDelegate.swift */,
 				32456FF9291100AC005BDAEC /* SceneDelegate.swift */,
@@ -149,13 +89,65 @@
 			path = PhotoLog;
 			sourceTree = "<group>";
 		};
-		3272EAFA294E648C0097A3C3 /* MainViewController */ = {
+		3272EAFD294E6F360097A3C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				323FA89B294E5E91000934D0 /* Cells */,
-				323FA89E294E5E91000934D0 /* PhotoLogViewController.swift */,
+				3272EAFE294E6F450097A3C3 /* AnimatingBarButton */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3272EAFE294E6F450097A3C3 /* AnimatingBarButton */ = {
+			isa = PBXGroup;
+			children = (
+				3272EB02294E6F6E0097A3C3 /* AnimatingBarButton.swift */,
+				3272EAFF294E6F500097A3C3 /* Animations */,
+			);
+			path = AnimatingBarButton;
+			sourceTree = "<group>";
+		};
+		3272EAFF294E6F500097A3C3 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				3272EB00294E6F5C0097A3C3 /* Rotatable.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		3272EB04294E6F870097A3C3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3272EB06294E6FB50097A3C3 /* MainTableViewController */,
+				3272EB05294E6FAC0097A3C3 /* MainViewController */,
+				3272EAFB294E6F1F0097A3C3 /* AppleLoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3272EB05294E6FAC0097A3C3 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3272EB07294E6FC80097A3C3 /* Cells */,
+				3272EB0A294E6FF40097A3C3 /* MainViewController.swift */,
 			);
 			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		3272EB06294E6FB50097A3C3 /* MainTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3272EB08294E6FDF0097A3C3 /* MainTableViewController.swift */,
+			);
+			path = MainTableViewController;
+			sourceTree = "<group>";
+		};
+		3272EB07294E6FC80097A3C3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3272EB0E294E70590097A3C3 /* MainCollectionViewCell.xib */,
+				3272EB0C294E700B0097A3C3 /* MainCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		83B814E017AB3D862CAFD8A3 /* Frameworks */ = {
@@ -238,7 +230,7 @@
 				32457004291100AD005BDAEC /* LaunchScreen.storyboard in Resources */,
 				32457001291100AD005BDAEC /* Assets.xcassets in Resources */,
 				32456FFF291100AC005BDAEC /* Main.storyboard in Resources */,
-				323FA8A3294E5E91000934D0 /* PhotoLogCollectionViewCell.xib in Resources */,
+				3272EB0F294E70590097A3C3 /* MainCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,13 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3272EB03294E6F6E0097A3C3 /* AnimatingBarButton.swift in Sources */,
+				3272EB09294E6FDF0097A3C3 /* MainTableViewController.swift in Sources */,
+				3272EB0B294E6FF50097A3C3 /* MainViewController.swift in Sources */,
 				32456FF8291100AC005BDAEC /* AppDelegate.swift in Sources */,
-				323FA8A0294E5E91000934D0 /* AnimationBarButton.swift in Sources */,
-				323FA8A5294E5E91000934D0 /* PhotoLogViewController.swift in Sources */,
-				323FA8A4294E5E91000934D0 /* PhotoLogCollectionViewCell.swift in Sources */,
+				3272EB01294E6F5C0097A3C3 /* Rotatable.swift in Sources */,
+				3272EB0D294E700B0097A3C3 /* MainCollectionViewCell.swift in Sources */,
 				32456FFA291100AC005BDAEC /* SceneDelegate.swift in Sources */,
-				323FA8A1294E5E91000934D0 /* Rotatable.swift in Sources */,
-				323FA8A2294E5E91000934D0 /* PhotoLogTableViewController.swift in Sources */,
+				3272EAFC294E6F1F0097A3C3 /* AppleLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

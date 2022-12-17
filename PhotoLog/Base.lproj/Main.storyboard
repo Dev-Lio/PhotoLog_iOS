@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Photo Log View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="AjI-Aq-CGA">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="NgR-Uf-Kie" customClass="PhotoLogViewController" customModule="PhotoLog" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="NgR-Uf-Kie" customClass="MainViewController" customModule="PhotoLog" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f5U-dB-Wqt"/>
                         <viewControllerLayoutGuide type="bottom" id="HxN-qS-R4P"/>
@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="868" y="110"/>
         </scene>
-        <!--Photo Log Table View Controller-->
+        <!--Main Table View Controller-->
         <scene sceneID="SPR-iY-jVs">
             <objects>
-                <tableViewController storyboardIdentifier="PhotoLogTableViewController" automaticallyAdjustsScrollViewInsets="NO" id="QNU-GY-mZb" customClass="PhotoLogTableViewController" customModule="PhotoLog" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MainTableViewController" automaticallyAdjustsScrollViewInsets="NO" id="QNU-GY-mZb" customClass="MainTableViewController" customModule="PhotoLog" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vcD-Me-oYg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
