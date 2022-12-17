@@ -18,6 +18,7 @@
 		3272EB09294E6FDF0097A3C3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EB08294E6FDF0097A3C3 /* MainTableViewController.swift */; };
 		3272EB0B294E6FF50097A3C3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EB0A294E6FF40097A3C3 /* MainViewController.swift */; };
 		3272EB0D294E700B0097A3C3 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EB0C294E700B0097A3C3 /* MainCollectionViewCell.swift */; };
+		3285C7B0294E770200F92A59 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3285C7AF294E770200F92A59 /* MainCollectionViewCell.xib */; };
 		C942F132D8CE7F51D284A6C6 /* Pods_PhotoLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A55268F825AF5EF0AF53BF /* Pods_PhotoLog.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		3272EB08294E6FDF0097A3C3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		3272EB0A294E6FF40097A3C3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3272EB0C294E700B0097A3C3 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		3285C7AF294E770200F92A59 /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
 		32964DF42924855C0054621E /* PhotoLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoLog.entitlements; sourceTree = "<group>"; };
 		61A55268F825AF5EF0AF53BF /* Pods_PhotoLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		957DCE248137EB30E0F13B9E /* Pods-PhotoLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLog.release.xcconfig"; path = "Target Support Files/Pods-PhotoLog/Pods-PhotoLog.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		3272EB07294E6FC80097A3C3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				3285C7AF294E770200F92A59 /* MainCollectionViewCell.xib */,
 				3272EB0C294E700B0097A3C3 /* MainCollectionViewCell.swift */,
 			);
 			path = Cells;
@@ -227,6 +230,7 @@
 				32457004291100AD005BDAEC /* LaunchScreen.storyboard in Resources */,
 				32457001291100AD005BDAEC /* Assets.xcassets in Resources */,
 				32456FFF291100AC005BDAEC /* Main.storyboard in Resources */,
+				3285C7B0294E770200F92A59 /* MainCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
