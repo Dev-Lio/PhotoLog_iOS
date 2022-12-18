@@ -182,6 +182,7 @@
                 <outlet property="backConstraintY" destination="dmf-qy-2nS" id="szE-V2-yce"/>
                 <outlet property="backContainerView" destination="rbd-6U-uYZ" id="fl2-yE-o3C"/>
                 <outlet property="backgroundImageView" destination="9FK-FA-F0l" id="kns-UF-jMo"/>
+                <outlet property="customContent" destination="eC4-wU-lTH" id="M0z-b9-XwN"/>
                 <outlet property="customTitle" destination="XFh-D7-eSl" id="eia-lY-ptu"/>
                 <outlet property="frontConstraintY" destination="0xA-8H-CCG" id="qOL-jY-lrP"/>
                 <outlet property="frontContainerView" destination="4h2-Xv-xjU" id="Mxy-UR-phd"/>

@@ -1,9 +1,3 @@
-//
-//  AppleLoginViewController.swift
-//  PhotoLog
-//
-//  Created by Lio on 2022/12/12.
-//
 
 import UIKit
 import AuthenticationServices

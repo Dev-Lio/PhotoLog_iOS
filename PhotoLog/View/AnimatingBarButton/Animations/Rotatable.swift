@@ -24,18 +24,12 @@ extension Rotatable {
     }
 
     fileprivate func animationFrom(_ from: Double, to: Double, key: String, duration: Double) -> CABasicAnimation {
-        let cabasicAnumation = CABasicAnimation(keyPath: key)
-        cabasicAnumation.duration = duration
-        cabasicAnumation.fromValue = from
-        cabasicAnumation.toValue = to
-        cabasicAnumation.fillMode = CAMediaTimingFillMode.forwards
-        cabasicAnumation.isRemovedOnCompletion = false
-        return cabasicAnumation
-//        return Init(CABasicAnimation(keyPath: key)) {
-//            $0.duration = duration
-//            $0.fromValue = from
-//            $0.toValue = to
-//            $0.fillMode = CAMediaTimingFillMode.forwards
-//            $0.isRemovedOnCompletion = false
+        let animation = CABasicAnimation(keyPath: key)
+        animation.duration = duration
+        animation.fromValue = from
+        animation.toValue = to
+        animation.fillMode = CAMediaTimingFillMode.forwards
+        animation.isRemovedOnCompletion = false
+        return animation
     }
 }

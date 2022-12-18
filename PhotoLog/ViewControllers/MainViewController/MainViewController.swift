@@ -4,9 +4,14 @@ import expanding_collection
 
 class MainViewController: ExpandingViewController {
 
-    typealias ItemInfo = (imageName: String, title: String)
+    typealias ItemInfo = (imageName: String, title: String, content: String)
     fileprivate var cellsIsOpen = [Bool]()
-    fileprivate let items: [ItemInfo] = [("item0", "Boston"), ("item1", "New York"), ("item2", "San Francisco"), ("item3", "Washington")]
+    fileprivate let items: [ItemInfo] = [
+        ("item0", "2022", "content 1"),
+        ("item1", "22/12/18 ", "content 2"),
+        ("item2", "December", "content 3"),
+        ("item3", "이십이년", "content 4")
+    ]
 
     @IBOutlet var pageLabel: UILabel!
 }
@@ -69,10 +74,12 @@ extension MainViewController {
         // double swipe Up transition
         if cell.isOpened == true && sender.direction == .up {
             pushToViewController(getViewController())
+
             if let rightButton = navigationItem.rightBarButtonItem as? AnimatingBarButton {
                 rightButton.animationSelected(true)
             }
         }
+
 
         let open = sender.direction == .up ? true : false
         cell.cellIsOpen(open)
@@ -85,7 +92,11 @@ extension MainViewController {
 extension MainViewController {
 
     func scrollViewDidScroll(_: UIScrollView) {
-        pageLabel.text = "\(currentIndex + 1)/\(items.count)"
+        var indexText = ""
+        if items.count > 0 {
+            indexText = "\(currentIndex + 1) / \(items.count)"
+        }
+        pageLabel.text = indexText
     }
 }
 
@@ -100,7 +111,15 @@ extension MainViewController {
         let index = indexPath.row % items.count
         let info = items[index]
         cell.backgroundImageView?.image = UIImage(named: info.imageName)
+       
         cell.customTitle.text = info.title
+        // 라벨 글자 뒤 그림자 효과
+        cell.customTitle.layer.shadowOffset = CGSize(width: 3, height: 3)
+        cell.customTitle.layer.shadowOpacity = 0.8
+        cell.customTitle.layer.shadowRadius = 2
+        cell.customTitle.layer.shadowColor = CGColor.init(srgbRed: 0.83, green: 0.83, blue: 0.83, alpha: 1.0)
+        
+        cell.customContent.text = info.content
         cell.cellIsOpen(cellsIsOpen[index], animated: false)
     }
 
@@ -112,6 +131,7 @@ extension MainViewController {
             cell.cellIsOpen(true)
         } else {
             pushToViewController(getViewController())
+
             if let rightButton = navigationItem.rightBarButtonItem as? AnimatingBarButton {
                 rightButton.animationSelected(true)
             }

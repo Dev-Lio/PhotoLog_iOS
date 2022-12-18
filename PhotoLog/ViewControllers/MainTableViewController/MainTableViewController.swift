@@ -12,6 +12,7 @@ class MainTableViewController: ExpandingTableViewController {
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
         }
+//        headerHeight = 500
     }
 }
 
@@ -42,6 +43,7 @@ extension MainTableViewController {
     }
 }
 
+
 // MARK: UIScrollViewDelegate
 
 extension MainTableViewController {
@@ -49,7 +51,7 @@ extension MainTableViewController {
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y < -25 , let navigationController = navigationController {
             // buttonAnimation
-            for case let viewController as MainViewController in navigationController.viewControllers {
+            for case let viewController as MainTableViewController in navigationController.viewControllers {
                 if case let rightButton as AnimatingBarButton = viewController.navigationItem.rightBarButtonItem {
                     rightButton.animationSelected(false)
                 }
