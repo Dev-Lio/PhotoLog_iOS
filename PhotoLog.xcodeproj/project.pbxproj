@@ -452,7 +452,7 @@
 				DEVELOPMENT_TEAM = CR5AN944TA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoLog/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "포토로그";
+				INFOPLIST_KEY_CFBundleDisplayName = PhotoLog;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -487,7 +487,7 @@
 				DEVELOPMENT_TEAM = CR5AN944TA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoLog/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "포토로그";
+				INFOPLIST_KEY_CFBundleDisplayName = PhotoLog;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

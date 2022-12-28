@@ -20,23 +20,22 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="VGn-vC-j8a">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="FDz-hU-sM0">
-                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="PwK-Xa-Ip2"/>
-                                    <constraint firstAttribute="width" constant="100" id="dci-fP-AS7"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Log" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esD-1z-95P">
+                                <rect key="frame" x="136" y="320.5" width="103.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VGn-vC-j8a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1cK-M5-BEb"/>
-                            <constraint firstItem="FDz-hU-sM0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ckF-wo-9EC"/>
+                            <constraint firstItem="esD-1z-95P" firstAttribute="centerX" secondItem="VGn-vC-j8a" secondAttribute="centerX" id="SB4-2j-hJD"/>
                             <constraint firstItem="VGn-vC-j8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fsS-Jz-VRr"/>
-                            <constraint firstItem="FDz-hU-sM0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fz5-e0-xjC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VGn-vC-j8a" secondAttribute="trailing" id="gWA-9E-26e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VGn-vC-j8a" secondAttribute="bottom" id="jTk-Uh-yXU"/>
+                            <constraint firstItem="esD-1z-95P" firstAttribute="centerY" secondItem="VGn-vC-j8a" secondAttribute="centerY" id="lry-lv-H01"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -47,7 +46,6 @@
     </scenes>
     <resources>
         <image name="BackgroundImage" width="375" height="667"/>
-        <image name="Title" width="51" height="16"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
