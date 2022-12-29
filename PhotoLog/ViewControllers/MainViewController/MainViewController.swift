@@ -21,7 +21,7 @@ class MainViewController: ExpandingViewController {
 extension MainViewController {
 
     override func viewDidLoad() {
-        itemSize = CGSize(width: 256, height: 460)
+        itemSize = CGSize(width: 256, height: 510)
         super.viewDidLoad()
 
         registerCell()
