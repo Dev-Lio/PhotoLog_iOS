@@ -62,7 +62,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kek-4r-lmJ">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="searchIcon" id="oga-l5-UGs"/>
+                        <barButtonItem key="leftBarButtonItem" id="oga-l5-UGs"/>
                         <view key="titleView" contentMode="scaleToFill" id="A3y-36-xXL">
                             <rect key="frame" x="67.5" y="5.5" width="240" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -405,7 +405,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="obA-66-uya">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="searchIcon" id="kDX-68-gGu"/>
+                        <barButtonItem key="leftBarButtonItem" id="kDX-68-gGu"/>
                         <view key="titleView" contentMode="scaleToFill" id="RAs-FO-CsD" userLabel="Item View">
                             <rect key="frame" x="67.5" y="5.5" width="240" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -445,7 +445,6 @@
         <image name="heand" width="14.5" height="13.5"/>
         <image name="locationButton" width="20" height="20"/>
         <image name="map" width="375" height="124"/>
-        <image name="searchIcon" width="20" height="20"/>
         <image name="stars" width="77" height="11.5"/>
     </resources>
 </document>
