@@ -27,7 +27,8 @@ extension MainViewController {
         registerCell()
         fillCellIsOpenArray()
         addGesture(to: collectionView!)
-        configureNavBar()
+        // 아이콘 변경 후 실행 시 에러 발생
+//        configureNavBar()
     }
 }
 
@@ -52,7 +53,7 @@ extension MainViewController {
     }
 
     fileprivate func configureNavBar() {
-//        navigationItem.leftBarButtonItem?.image = navigationItem.leftBarButtonItem?.image!.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        navigationItem.leftBarButtonItem?.image = navigationItem.leftBarButtonItem?.image!.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
     }
 }
 

@@ -7,7 +7,8 @@ class MainTableViewController: ExpandingTableViewController {
     fileprivate var scrollOffsetY: CGFloat = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureNavBar()
+        // 아이콘 변경 후 실행 시 에러 발생
+//        configureNavBar()
         tableView.backgroundView = UIImageView(image: UIImage(named: "BackgroundImage"))
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
