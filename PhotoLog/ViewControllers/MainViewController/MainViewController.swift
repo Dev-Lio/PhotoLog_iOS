@@ -2,6 +2,8 @@
 import UIKit
 import expanding_collection
 
+// happy new year
+
 class MainViewController: ExpandingViewController {
 
     typealias ItemInfo = (imageName: String, title: String, content: String)
