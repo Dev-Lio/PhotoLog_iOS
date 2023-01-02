@@ -9,6 +9,7 @@ class MainTableViewController: ExpandingTableViewController {
         super.viewDidLoad()
         // 아이콘 변경 후 실행 시 에러 발생
 //        configureNavBar()
+        headerHeight = 450
         tableView.backgroundView = UIImageView(image: UIImage(named: "BackgroundImage"))
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
