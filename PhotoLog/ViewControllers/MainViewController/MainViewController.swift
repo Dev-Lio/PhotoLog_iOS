@@ -54,9 +54,9 @@ extension MainViewController {
         return toViewController
     }
 
-    fileprivate func configureNavBar() {
-        navigationItem.leftBarButtonItem?.image = navigationItem.leftBarButtonItem?.image!.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-    }
+//    fileprivate func configureNavBar() {
+//        navigationItem.leftBarButtonItem?.image = navigationItem.leftBarButtonItem?.image!.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+//    }
 }
 
 /// MARK: Gesture

@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        // Apple Login 구현부분
+        // Apple Login
 //        let uid = UserDefaults.standard.string(forKey: "uid") ?? ""
 //        print("uid = \(uid)")
 //        let appleIDProvider = ASAuthorizationAppleIDProvider()
