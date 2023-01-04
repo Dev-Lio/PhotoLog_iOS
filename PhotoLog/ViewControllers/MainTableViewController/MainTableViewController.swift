@@ -16,7 +16,12 @@ class MainTableViewController: ExpandingTableViewController {
         
         // 테이블뷰 커스터 마이징
         headerHeight = 500
-//        tableView.rowHeight = UITableView.automaticDimension
+   
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.estimatedRowHeight = 44.0
+        tableView.rowHeight = UITableView.automaticDimension
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
