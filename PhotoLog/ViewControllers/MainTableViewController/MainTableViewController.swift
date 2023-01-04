@@ -19,11 +19,6 @@ class MainTableViewController: ExpandingTableViewController {
    
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        tableView.estimatedRowHeight = 44.0
-        tableView.rowHeight = UITableView.automaticDimension
-    }
-    
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
