@@ -18,7 +18,7 @@ class MainViewController: ExpandingViewController {
     @IBOutlet var pageLabel: UILabel!
 }
 
-// MARK: - Lifecycle 🌎
+// MARK: - Lifecycle
 
 extension MainViewController {
 
@@ -39,7 +39,6 @@ extension MainViewController {
 extension MainViewController {
 
     fileprivate func registerCell() {
-
         let nib = UINib(nibName: String(describing: MainCollectionViewCell.self), bundle: nil)
         collectionView?.register(nib, forCellWithReuseIdentifier: String(describing: MainCollectionViewCell.self))
     }

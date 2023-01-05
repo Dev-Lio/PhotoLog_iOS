@@ -19,6 +19,8 @@
 		3285C7B5294EE75400F92A59 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3285C7B4294EE75400F92A59 /* MainCollectionViewCell.xib */; };
 		3285C7B9294EFBEF00F92A59 /* AnimatingBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285C7B8294EFBEF00F92A59 /* AnimatingBarButton.swift */; };
 		3285C7BC294EFC1000F92A59 /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285C7BB294EFC1000F92A59 /* Rotatable.swift */; };
+		32C78653296656C800C919CE /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C78652296656C800C919CE /* DetailTableViewCell.swift */; };
+		32C786552966572000C919CE /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C786542966572000C919CE /* DetailTableViewCell.xib */; };
 		C942F132D8CE7F51D284A6C6 /* Pods_PhotoLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A55268F825AF5EF0AF53BF /* Pods_PhotoLog.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		3285C7B8294EFBEF00F92A59 /* AnimatingBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingBarButton.swift; sourceTree = "<group>"; };
 		3285C7BB294EFC1000F92A59 /* Rotatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
 		32964DF42924855C0054621E /* PhotoLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoLog.entitlements; sourceTree = "<group>"; };
+		32C78652296656C800C919CE /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		32C786542966572000C919CE /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		61A55268F825AF5EF0AF53BF /* Pods_PhotoLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		957DCE248137EB30E0F13B9E /* Pods-PhotoLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLog.release.xcconfig"; path = "Target Support Files/Pods-PhotoLog/Pods-PhotoLog.release.xcconfig"; sourceTree = "<group>"; };
 		9C01BBEA7C8412FC00F9740E /* Pods-PhotoLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLog.debug.xcconfig"; path = "Target Support Files/Pods-PhotoLog/Pods-PhotoLog.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		3272EB06294E6FB50097A3C3 /* MainTableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				32C7865129664FFD00C919CE /* Cells */,
 				3272EB08294E6FDF0097A3C3 /* MainTableViewController.swift */,
 			);
 			path = MainTableViewController;
@@ -156,6 +161,15 @@
 				3285C7BB294EFC1000F92A59 /* Rotatable.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		32C7865129664FFD00C919CE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				32C78652296656C800C919CE /* DetailTableViewCell.swift */,
+				32C786542966572000C919CE /* DetailTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		83B814E017AB3D862CAFD8A3 /* Frameworks */ = {
@@ -236,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32457004291100AD005BDAEC /* LaunchScreen.storyboard in Resources */,
+				32C786552966572000C919CE /* DetailTableViewCell.xib in Resources */,
 				32457001291100AD005BDAEC /* Assets.xcassets in Resources */,
 				32456FFF291100AC005BDAEC /* Main.storyboard in Resources */,
 				3285C7B5294EE75400F92A59 /* MainCollectionViewCell.xib in Resources */,
@@ -291,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C78653296656C800C919CE /* DetailTableViewCell.swift in Sources */,
 				3285C7BC294EFC1000F92A59 /* Rotatable.swift in Sources */,
 				3272EB09294E6FDF0097A3C3 /* MainTableViewController.swift in Sources */,
 				3272EB0B294E6FF50097A3C3 /* MainViewController.swift in Sources */,

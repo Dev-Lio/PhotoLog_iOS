@@ -14,19 +14,23 @@ class MainTableViewController: ExpandingTableViewController {
             tableView.contentInsetAdjustmentBehavior = .never
         }
         
-        // 테이블뷰 커스터 마이징
-        headerHeight = 500
-   
+        // 상단 이미지 높이 화면의 2/3 크기 설정
+        headerHeight = UIScreen.main.bounds.size.height * (2/3)
     }
+}
+
+// MARK: Bind Data
+extension MainTableViewController {
     
-    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailTableViewCell", for: indexPath) as! DetailTableViewCell
+        cell.contentLabel.text = "내용 입니다"
+        return cell
     }
 }
 
 // MARK: Helpers
 //extension MainTableViewController {
-//
 //    fileprivate func configureNavBar() {
 //        navigationItem.leftBarButtonItem?.image = navigationItem.leftBarButtonItem?.image!.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
 //        navigationItem.rightBarButtonItem?.image = navigationItem.rightBarButtonItem?.image!.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
