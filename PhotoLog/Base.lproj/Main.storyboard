@@ -108,7 +108,11 @@
                                 <action selector="backButtonHandler:" destination="TEF-Lb-S0b" id="3Md-zM-eoK"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="r6g-PG-ihd"/>
+                        <barButtonItem key="rightBarButtonItem" image="square" catalog="system" id="r6g-PG-ihd">
+                            <connections>
+                                <segue destination="oTi-B0-Yk9" kind="show" id="3mr-mE-ipp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -116,38 +120,62 @@
             </objects>
             <point key="canvasLocation" x="1965.5999999999999" y="427.73613193403304"/>
         </scene>
-        <!--View Controller-->
+        <!--Image Zoom View Controller-->
         <scene sceneID="bMg-gt-EAD">
             <objects>
-                <viewController id="oTi-B0-Yk9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageZoomViewController" id="oTi-B0-Yk9" customClass="ImageZoomViewController" customModule="PhotoLog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wR2-Ng-Npv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header tapped" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96j-vl-oay">
-                                <rect key="frame" x="130.5" y="323" width="114" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCj-uD-Xrb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="El6-cg-zLB">
+                                        <rect key="frame" x="0.0" y="-44" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="El6-cg-zLB" firstAttribute="centerY" secondItem="bCj-uD-Xrb" secondAttribute="centerY" id="09x-Pz-2tJ"/>
+                                    <constraint firstItem="El6-cg-zLB" firstAttribute="centerX" secondItem="bCj-uD-Xrb" secondAttribute="centerX" id="3uH-t3-BRS"/>
+                                    <constraint firstItem="El6-cg-zLB" firstAttribute="height" secondItem="bCj-uD-Xrb" secondAttribute="height" id="Tez-CA-fR4"/>
+                                    <constraint firstItem="El6-cg-zLB" firstAttribute="width" secondItem="bCj-uD-Xrb" secondAttribute="width" id="spW-ea-6Dg"/>
+                                    <constraint firstItem="El6-cg-zLB" firstAttribute="width" secondItem="bCj-uD-Xrb" secondAttribute="width" id="yqq-nx-Qsp"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="igq-XN-7cZ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="9FF-YB-Zvm"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MD5-O8-Q0f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="96j-vl-oay" firstAttribute="centerY" secondItem="MD5-O8-Q0f" secondAttribute="centerY" id="Nhf-Yy-By2"/>
-                            <constraint firstItem="96j-vl-oay" firstAttribute="centerX" secondItem="MD5-O8-Q0f" secondAttribute="centerX" id="nOa-4o-yNd"/>
+                            <constraint firstItem="bCj-uD-Xrb" firstAttribute="centerX" secondItem="MD5-O8-Q0f" secondAttribute="centerX" id="MrP-ac-R4h"/>
+                            <constraint firstItem="bCj-uD-Xrb" firstAttribute="height" secondItem="wR2-Ng-Npv" secondAttribute="height" id="Rrm-6h-Sw3"/>
+                            <constraint firstItem="bCj-uD-Xrb" firstAttribute="width" secondItem="wR2-Ng-Npv" secondAttribute="width" id="Yux-vj-5yW"/>
+                            <constraint firstItem="bCj-uD-Xrb" firstAttribute="centerY" secondItem="MD5-O8-Q0f" secondAttribute="centerY" id="ZlM-La-ydE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="00J-xC-r9Y">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="Lf4-iP-Q1g">
+                            <connections>
+                                <action selector="goBack:" destination="oTi-B0-Yk9" id="itr-x1-00L"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="El6-cg-zLB" id="Buo-RY-C6e"/>
+                        <outlet property="scrollView" destination="bCj-uD-Xrb" id="Qmu-sN-GSN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hs1-5U-ckA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2681" y="441"/>
+            <point key="canvasLocation" x="2692" y="427.73613193403304"/>
         </scene>
     </scenes>
     <resources>
         <image name="BackgroundImage" width="375" height="667"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

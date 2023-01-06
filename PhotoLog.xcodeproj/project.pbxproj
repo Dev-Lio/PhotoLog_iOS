@@ -21,6 +21,7 @@
 		3285C7BC294EFC1000F92A59 /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285C7BB294EFC1000F92A59 /* Rotatable.swift */; };
 		32C78653296656C800C919CE /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C78652296656C800C919CE /* DetailTableViewCell.swift */; };
 		32C786552966572000C919CE /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C786542966572000C919CE /* DetailTableViewCell.xib */; };
+		32CF311B296855AF0094E303 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF311A296855AF0094E303 /* ImageZoomViewController.swift */; };
 		C942F132D8CE7F51D284A6C6 /* Pods_PhotoLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A55268F825AF5EF0AF53BF /* Pods_PhotoLog.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		32964DF42924855C0054621E /* PhotoLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoLog.entitlements; sourceTree = "<group>"; };
 		32C78652296656C800C919CE /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		32C786542966572000C919CE /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		32CF311A296855AF0094E303 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
 		61A55268F825AF5EF0AF53BF /* Pods_PhotoLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		957DCE248137EB30E0F13B9E /* Pods-PhotoLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLog.release.xcconfig"; path = "Target Support Files/Pods-PhotoLog/Pods-PhotoLog.release.xcconfig"; sourceTree = "<group>"; };
 		9C01BBEA7C8412FC00F9740E /* Pods-PhotoLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLog.debug.xcconfig"; path = "Target Support Files/Pods-PhotoLog/Pods-PhotoLog.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				32C7865129664FFD00C919CE /* Cells */,
 				3272EB08294E6FDF0097A3C3 /* MainTableViewController.swift */,
+				32CF311A296855AF0094E303 /* ImageZoomViewController.swift */,
 			);
 			path = MainTableViewController;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				3285C7B9294EFBEF00F92A59 /* AnimatingBarButton.swift in Sources */,
 				32456FF8291100AC005BDAEC /* AppDelegate.swift in Sources */,
 				3272EB0D294E700B0097A3C3 /* MainCollectionViewCell.swift in Sources */,
+				32CF311B296855AF0094E303 /* ImageZoomViewController.swift in Sources */,
 				32456FFA291100AC005BDAEC /* SceneDelegate.swift in Sources */,
 				3272EAFC294E6F1F0097A3C3 /* AppleLoginViewController.swift in Sources */,
 			);
