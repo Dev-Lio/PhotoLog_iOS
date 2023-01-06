@@ -46,7 +46,8 @@ extension MainTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailTableViewCell", for: indexPath) as! DetailTableViewCell
-        cell.contentLabel.text = "행 높이의 음수가 아닌 추정치를 제공하면 테이블보기로드 성능을 향상시킬 수 있습니다. 테이블에 가변 높이 행이 포함 된 경우 테이블이로드 될 때 모든 높이를 계산하는 데 비용이 많이들 수 있습니다. 추정을 사용하면로드 시간에서 스크롤링 시간까지 기하학 계산 비용의 일부를 연기 할 수 있습니다. 기본값은 automaticDimension이며, 이는 테이블보기가 사용자 대신 사용할 예상 높이를 선택 함을 의미합니다. 값을 0으로 설정하면 예상 높이가 비활성화되어 테이블 뷰가 각 셀의 실제 높이를 요청하게됩니다. 테이블에서 자체 크기 조정 셀을 사용하는 경우이 속성의 값은 0이 아니어야합니다. 높이 추정을 사용할 때 테이블보기는 스크롤보기에서 상속 된 contentOffset 및 contentSize 속성을 적극적으로 관리합니다. 이러한 속성을 직접 읽거나 수정하지 마십시오."
+        let introduction = NSAttributedString(string: "행 높이의 음수가 아닌 추정치를 제공하면 테이블보기로드 성능을 향상시킬 수 있습니다. 테이블에 가변 높이 행이 포함 된 경우 테이블이로드 될 때 모든 높이를 계산하는 데 비용이 많이들 수 있습니다. 추정을 사용하면로드 시간에서 스크롤링 시간까지 기하학 계산 비용의 일부를 연기 할 수 있습니다. 기본값은 automaticDimension이며, 이는 테이블보기가 사용자 대신 사용할 예상 높이를 선택 함을 의미합니다. 값을 0으로 설정하면 예상 높이가 비활성화되어 테이블 뷰가 각 셀의 실제 높이를 요청하게됩니다. 테이블에서 자체 크기 조정 셀을 사용하는 경우이 속성의 값은 0이 아니어야합니다. 높이 추정을 사용할 때 테이블보기는 스크롤보기에서 상속 된 contentOffset 및 contentSize 속성을 적극적으로 관리합니다. 이러한 속성을 직접 읽거나 수정하지 마십시오.").withLineSpacing(10)
+        cell.contentLabel.attributedText = introduction
         cell.backgroundColor = UIColor.white
         return cell
     }
@@ -55,7 +56,6 @@ extension MainTableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
-
     
 }
 
@@ -96,5 +96,19 @@ extension MainTableViewController {
             popTransitionAnimation()
         }
         scrollOffsetY = scrollView.contentOffset.y
+    }
+}
+
+// MARK: Add line spacing to cell label
+extension NSAttributedString {
+    func withLineSpacing(_ spacing: CGFloat) -> NSAttributedString {
+        let attributedString = NSMutableAttributedString(attributedString: self)
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineBreakMode = .byTruncatingTail
+        paragraphStyle.lineSpacing = spacing
+        attributedString.addAttribute(.paragraphStyle,
+                                        value: paragraphStyle,
+                                        range: NSRange(location: 0, length: string.count))
+        return NSAttributedString(attributedString: attributedString)
     }
 }

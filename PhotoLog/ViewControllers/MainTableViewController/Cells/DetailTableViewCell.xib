@@ -17,19 +17,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kua-Fd-eqq">
-                        <rect key="frame" x="30" y="31" width="333" height="351"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <rect key="frame" x="20" y="30" width="353" height="333"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="kua-Fd-eqq" secondAttribute="trailing" constant="10" id="8g3-wT-bqE"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="kua-Fd-eqq" secondAttribute="bottom" constant="20" id="9d4-0o-cGU"/>
-                    <constraint firstItem="kua-Fd-eqq" firstAttribute="top" secondItem="1zf-c7-h8q" secondAttribute="topMargin" constant="20" id="AiH-Kd-sQh"/>
-                    <constraint firstItem="kua-Fd-eqq" firstAttribute="leading" secondItem="1zf-c7-h8q" secondAttribute="leadingMargin" constant="10" id="QBo-Je-ODa"/>
-                    <constraint firstItem="kua-Fd-eqq" firstAttribute="centerX" secondItem="1zf-c7-h8q" secondAttribute="centerX" id="b7m-ug-Y8Y"/>
-                    <constraint firstItem="kua-Fd-eqq" firstAttribute="centerY" secondItem="1zf-c7-h8q" secondAttribute="centerY" id="hRw-uT-KjX"/>
+                    <constraint firstItem="kua-Fd-eqq" firstAttribute="leading" secondItem="1zf-c7-h8q" secondAttribute="leading" constant="20" id="9GC-vi-azc"/>
+                    <constraint firstAttribute="bottom" secondItem="kua-Fd-eqq" secondAttribute="bottom" constant="50" id="M9V-6E-ePA"/>
+                    <constraint firstItem="kua-Fd-eqq" firstAttribute="top" secondItem="1zf-c7-h8q" secondAttribute="top" constant="30" id="MZM-3N-vgm"/>
+                    <constraint firstAttribute="trailing" secondItem="kua-Fd-eqq" secondAttribute="trailing" constant="20" id="RZ0-i6-dFY"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

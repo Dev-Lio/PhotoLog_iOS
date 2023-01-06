@@ -15,6 +15,6 @@ class DetailTableViewCell: UITableViewCell {
     override class func awakeFromNib() {
         super.awakeFromNib()
         
-        
     }
 }
+
