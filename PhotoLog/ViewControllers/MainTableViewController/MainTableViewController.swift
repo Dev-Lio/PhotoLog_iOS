@@ -33,8 +33,8 @@ class MainTableViewController: ExpandingTableViewController {
 extension MainTableViewController {
     
     func setHeight(){
-        // 상단 이미지 높이 화면의 2/3 크기 설정
-        headerHeight = UIScreen.main.bounds.size.height * (3/4)
+        // 상단 이미지 높이 화면 크기만큼 조절
+        headerHeight = UIScreen.main.bounds.size.height
         // 테이블 뷰 셀 높이 자동 설정
         tableView.estimatedRowHeight = 80
     }
