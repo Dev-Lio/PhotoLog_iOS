@@ -19,15 +19,24 @@ class ImageZoomViewController: UIViewController {
     }
     
     func configure() {
+        
         imageView.image = UIImage(named: "item1")
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        imageView.addGestureRecognizer(tapGestureRecognizer)
+        
         scrollView.delegate = self
         scrollView.zoomScale = 1.0
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 2.0
     }
     
-    @IBAction func goBack(_ sender: Any) {
-        dismiss(animated: true)
+    @objc func imageTapped() {
+        print("TAP")
+    }
+    
+    @IBAction func goBack(_: Any) {
+        navigationController?.popViewController(animated: true)
     }
 }
 

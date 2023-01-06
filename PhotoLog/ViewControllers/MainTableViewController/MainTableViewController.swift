@@ -18,15 +18,15 @@ class MainTableViewController: ExpandingTableViewController {
 
         // 헤더 뷰의 컨텍스트를 가져와서 터치 이벤트를 걸어줘야 한다
         // Initialize Tap Gesture Recognizer
-         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(headerTapped))
+//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(headerTapped))
          // Add Tap Gesture Recognizer
 //        getHeaderView()?.addGestureRecognizer(tapGestureRecognizer)
-        view.addGestureRecognizer(tapGestureRecognizer)
+//        view.addGestureRecognizer(tapGestureRecognizer)
     }
     
     @objc private func headerTapped() {
-           print("Header tapped")
-       }
+        print("Header tapped")
+    }
 }
 
 // MARK: Bind Data
