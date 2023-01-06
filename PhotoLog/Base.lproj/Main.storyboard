@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -76,11 +77,24 @@
         <scene sceneID="Gqp-p8-3gJ">
             <objects>
                 <tableViewController storyboardIdentifier="MainTableViewController" automaticallyAdjustsScrollViewInsets="NO" id="TEF-Lb-S0b" customClass="MainTableViewController" customModule="PhotoLog" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PUy-9g-rkK">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PUy-9g-rkK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <sections/>
+                        <sections>
+                            <tableViewSection id="HCc-AC-Akb">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="rTw-qo-mHN">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rTw-qo-mHN" id="r9o-Ac-SFO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="TEF-Lb-S0b" id="vC1-Oa-nx7"/>
                             <outlet property="delegate" destination="TEF-Lb-S0b" id="vXS-kj-q4V"/>
@@ -89,12 +103,12 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="obA-66-uya">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" id="kDX-68-gGu"/>
-                        <barButtonItem key="rightBarButtonItem" image="CloseButton" id="r6g-PG-ihd">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="kDX-68-gGu">
                             <connections>
-                                <action selector="backButtonHandler:" destination="TEF-Lb-S0b" id="YSD-zq-cOK"/>
+                                <action selector="backButtonHandler:" destination="TEF-Lb-S0b" id="3Md-zM-eoK"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="r6g-PG-ihd"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -102,9 +116,40 @@
             </objects>
             <point key="canvasLocation" x="1965.5999999999999" y="427.73613193403304"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="bMg-gt-EAD">
+            <objects>
+                <viewController id="oTi-B0-Yk9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wR2-Ng-Npv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header tapped" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96j-vl-oay">
+                                <rect key="frame" x="130.5" y="323" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MD5-O8-Q0f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="96j-vl-oay" firstAttribute="centerY" secondItem="MD5-O8-Q0f" secondAttribute="centerY" id="Nhf-Yy-By2"/>
+                            <constraint firstItem="96j-vl-oay" firstAttribute="centerX" secondItem="MD5-O8-Q0f" secondAttribute="centerX" id="nOa-4o-yNd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hs1-5U-ckA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2681" y="441"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BackgroundImage" width="375" height="667"/>
-        <image name="CloseButton" width="20" height="20"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

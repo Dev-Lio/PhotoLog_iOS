@@ -9,8 +9,8 @@ class MainViewController: ExpandingViewController {
     typealias ItemInfo = (imageName: String, title: String, content: String)
     fileprivate var cellsIsOpen = [Bool]()
     fileprivate let items: [ItemInfo] = [
-        ("item0", "2022", "content 1"),
-        ("item1", "22/12/18 ", "content 2"),
+        ("item0", "2022. 12. 18", "content 1"),
+        ("item0", "22. 12. 18 ", "content 2"),
         ("item2", "December", "content 3"),
         ("item3", "이십이년", "content 4")
     ]
@@ -77,8 +77,8 @@ extension MainViewController {
         if cell.isOpened == true && sender.direction == .up {
             pushToViewController(getViewController())
 
-            if let rightButton = navigationItem.rightBarButtonItem as? AnimatingBarButton {
-                rightButton.animationSelected(true)
+            if let leftButton = navigationItem.leftBarButtonItem as? AnimatingBarButton {
+                leftButton.animationSelected(true)
             }
         }
 
@@ -134,8 +134,8 @@ extension MainViewController {
         } else {
             pushToViewController(getViewController())
 
-            if let rightButton = navigationItem.rightBarButtonItem as? AnimatingBarButton {
-                rightButton.animationSelected(true)
+            if let leftButton = navigationItem.leftBarButtonItem as? AnimatingBarButton {
+                leftButton.animationSelected(true)
             }
         }
     }
