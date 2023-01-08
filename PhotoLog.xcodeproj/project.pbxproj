@@ -12,6 +12,7 @@
 		32456FFF291100AC005BDAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32456FFD291100AC005BDAEC /* Main.storyboard */; };
 		32457001291100AD005BDAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32457000291100AD005BDAEC /* Assets.xcassets */; };
 		32457004291100AD005BDAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32457002291100AD005BDAEC /* LaunchScreen.storyboard */; };
+		325A8626296A90CB00486E77 /* AddLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325A8625296A90CB00486E77 /* AddLogViewController.swift */; };
 		3272EAFC294E6F1F0097A3C3 /* AppleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EAFB294E6F1F0097A3C3 /* AppleLoginViewController.swift */; };
 		3272EB09294E6FDF0097A3C3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EB08294E6FDF0097A3C3 /* MainTableViewController.swift */; };
 		3272EB0B294E6FF50097A3C3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EB0A294E6FF40097A3C3 /* MainViewController.swift */; };
@@ -33,6 +34,7 @@
 		32457000291100AD005BDAEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32457003291100AD005BDAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32457005291100AD005BDAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		325A8625296A90CB00486E77 /* AddLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLogViewController.swift; sourceTree = "<group>"; };
 		3272EAFB294E6F1F0097A3C3 /* AppleLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginViewController.swift; sourceTree = "<group>"; };
 		3272EB08294E6FDF0097A3C3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		3272EB0A294E6FF40097A3C3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -95,9 +97,18 @@
 			path = PhotoLog;
 			sourceTree = "<group>";
 		};
+		325A8624296A90AD00486E77 /* AddLogViewController */ = {
+			isa = PBXGroup;
+			children = (
+				325A8625296A90CB00486E77 /* AddLogViewController.swift */,
+			);
+			path = AddLogViewController;
+			sourceTree = "<group>";
+		};
 		3272EB04294E6F870097A3C3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				325A8624296A90AD00486E77 /* AddLogViewController */,
 				3285C7B1294E778100F92A59 /* AppleLoginViewController */,
 				3272EB06294E6FB50097A3C3 /* MainTableViewController */,
 				3272EB05294E6FAC0097A3C3 /* MainViewController */,
@@ -317,6 +328,7 @@
 				32456FF8291100AC005BDAEC /* AppDelegate.swift in Sources */,
 				3272EB0D294E700B0097A3C3 /* MainCollectionViewCell.swift in Sources */,
 				32CF311B296855AF0094E303 /* ImageZoomViewController.swift in Sources */,
+				325A8626296A90CB00486E77 /* AddLogViewController.swift in Sources */,
 				32456FFA291100AC005BDAEC /* SceneDelegate.swift in Sources */,
 				3272EAFC294E6F1F0097A3C3 /* AppleLoginViewController.swift in Sources */,
 			);

@@ -14,7 +14,6 @@ class MainViewController: ExpandingViewController {
         ("item2", "December", "content 3"),
         ("item3", "이십이년", "content 4")
     ]
-
     @IBOutlet var pageLabel: UILabel!
 }
 
@@ -32,6 +31,7 @@ extension MainViewController {
         // 아이콘 변경 후 실행 시 에러 발생
 //        configureNavBar()
     }
+
 }
 
 // MARK: Helpers
@@ -61,6 +61,13 @@ extension MainViewController {
 /// MARK: Gesture
 extension MainViewController {
 
+    @IBAction func addLogAction(_: Any) {
+        guard let nextVC = storyboard?.instantiateViewController(withIdentifier: "AddLogViewController") as? AddLogViewController else { return }
+        nextVC.modalTransitionStyle = .coverVertical
+        nextVC.modalPresentationStyle = .fullScreen
+        present(nextVC, animated: true)
+    }
+    
     fileprivate func addGesture(to view: UIView) {
         let upGesture = UISwipeGestureRecognizer(target: self, action:  #selector(MainViewController.swipeHandler(_:)))
         upGesture.direction = .up
@@ -87,6 +94,7 @@ extension MainViewController {
         cell.cellIsOpen(open)
         cellsIsOpen[indexPath.row] = cell.isOpened
     }
+    
 }
 
 // MARK: UIScrollViewDelegate
@@ -115,7 +123,7 @@ extension MainViewController {
         cell.backgroundImageView?.image = UIImage(named: info.imageName)
        
         cell.customTitle.text = info.title
-        // 라벨 글자 뒤 그림자 효과
+        // 날짜 라벨 그림자 효과
         cell.customTitle.layer.shadowOffset = CGSize(width: 3, height: 3)
         cell.customTitle.layer.shadowOpacity = 0.8
         cell.customTitle.layer.shadowRadius = 2
