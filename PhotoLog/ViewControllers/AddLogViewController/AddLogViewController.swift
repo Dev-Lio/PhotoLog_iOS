@@ -3,15 +3,18 @@ import UIKit
 
 class AddLogViewController: UIViewController, UINavigationControllerDelegate {
  
-    @IBOutlet var addImageView: UIImageView!
-    @IBOutlet weak var titleStackView: UIStackView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var addImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentLabel: UILabel!
-    @IBOutlet weak var contentTextField: UITextField!
+    @IBOutlet weak var contentTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setImageTouchEvent()
+        setKeyboardNotification()
     }
     
     @IBAction func goBack(_ sender: Any) {
@@ -22,6 +25,11 @@ class AddLogViewController: UIViewController, UINavigationControllerDelegate {
         let alert = UIAlertController(title: "게시글 작성", message: "새 글이 작성되었습니다", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "확인", style: .cancel))
         self.present(alert, animated: true)
+    }
+   
+    // Hide Keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 }
 
@@ -61,6 +69,8 @@ extension AddLogViewController: UIImagePickerControllerDelegate {
         self.addImageView.image = img
         
         dismiss(animated: true)
+        
+        showInputBox()
         // 아래 방식 사용 시 이미지 선택 창이 닫히고 이미지 세팅되서 UI상으로 안이쁘다
 //        picker.dismiss(animated: true) { () in
 //            // 이미지를 이미지 뷰에 표시
@@ -70,8 +80,45 @@ extension AddLogViewController: UIImagePickerControllerDelegate {
     }
     
     func showInputBox() {
-        titleStackView.isHidden = false
+        titleLabel.isHidden = false
+        titleTextField.isHidden = false
         contentLabel.isHidden = false
-        contentTextField.isHidden = false
+        contentTextView.isHidden = false
+    }
+}
+
+// MARK : Keyboard Setting
+extension AddLogViewController {
+    
+    private func setKeyboardNotification() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillShow),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil
+        )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillHide),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil
+        )
+    }
+    
+    @objc private func keyboardWillShow(_ notification: Notification) {
+        guard let userInfo = notification.userInfo as NSDictionary?,
+              var keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+        keyboardFrame = view.convert(keyboardFrame, from: nil)
+        var contentInset = scrollView.contentInset
+        contentInset.bottom = keyboardFrame.size.height
+        scrollView.contentInset = contentInset
+        scrollView.scrollIndicatorInsets = scrollView.contentInset
+    }
+    
+    @objc private func keyboardWillHide(_ notification: Notification) {
+        scrollView.contentInset = UIEdgeInsets.zero
+        scrollView.scrollIndicatorInsets = scrollView.contentInset
     }
 }

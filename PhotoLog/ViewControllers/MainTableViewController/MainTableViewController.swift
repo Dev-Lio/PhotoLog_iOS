@@ -11,6 +11,7 @@ class MainTableViewController: ExpandingTableViewController {
 //        configureNavBar()
         registerCell()
         setHeight()
+        
         tableView.backgroundView = UIImageView(image: UIImage(named: "BackgroundImage"))
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
@@ -67,11 +68,11 @@ extension MainTableViewController {
 //    }
 //}
 
-// MARK: Right Bar Button item Actions
+// MARK: Bar Button item Actions
 extension MainTableViewController {
 
     @IBAction func backButtonHandler(_: AnyObject) {
-        // Right Bar Button rotation Animation
+        // Bar Button rotation Animation
         let viewControllers: [MainViewController?] = navigationController?.viewControllers.map { $0 as? MainViewController } ?? []
         for viewController in viewControllers {
             if let leftButton = viewController?.navigationItem.leftBarButtonItem as? AnimatingBarButton {
@@ -79,6 +80,11 @@ extension MainTableViewController {
             }
         }
         popTransitionAnimation()
+    }
+    
+    @IBAction func nextButtonAction(_: Any) {
+        guard let nextVC = storyboard?.instantiateViewController(withIdentifier: "ImageZoomViewController") as? ImageZoomViewController else { return }
+        navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 
