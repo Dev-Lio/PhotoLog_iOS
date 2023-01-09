@@ -192,11 +192,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HT0-Wb-cSZ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HT0-Wb-cSZ">
                                 <rect key="frame" x="0.0" y="59" width="430" height="839"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkE-WM-QKA">
-                                        <rect key="frame" x="0.0" y="0.0" width="430" height="1273"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="803"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Al1-m5-LH2">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="50.333333333333336"/>
@@ -214,45 +214,43 @@
                                                     <action selector="addImageLog:" destination="YlW-wg-0Ld" eventType="touchUpInside" id="8ar-xu-NQf"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m42-3a-l4P">
-                                                <rect key="frame" x="20" y="72.666666666666671" width="390" height="195.66666666666669"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="200" id="Nt9-4p-A1P"/>
-                                                </constraints>
-                                                <imageReference key="image" image="plus" catalog="system" symbolScale="default"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4I-h6-lqI">
-                                                <rect key="frame" x="20" y="290.33333333333331" width="390" height="26.333333333333314"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="제목을 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="50X-uR-QKb">
-                                                <rect key="frame" x="20" y="331.66666666666669" width="390" height="38.333333333333314"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXx-JA-g3x">
-                                                <rect key="frame" x="20" y="385" width="390" height="26.333333333333314"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YrM-i8-EP9">
-                                                <rect key="frame" x="20" y="426.33333333333331" width="390" height="846.66666666666674"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <mutableString key="text">Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</mutableString>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2023. 01. 08" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebi-td-CwS">
                                                 <rect key="frame" x="83" y="11" width="265" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m42-3a-l4P">
+                                                <rect key="frame" x="0.0" y="62.666666666666657" width="430" height="495.66666666666674"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="500" id="Nt9-4p-A1P"/>
+                                                </constraints>
+                                                <imageReference key="image" image="plus" catalog="system" symbolScale="default"/>
+                                            </imageView>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4I-h6-lqI">
+                                                <rect key="frame" x="20" y="580.33333333333337" width="390" height="26.333333333333371"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="제목을 입력하세요" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="50X-uR-QKb">
+                                                <rect key="frame" x="20" y="621.66666666666663" width="390" height="30.333333333333371"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXx-JA-g3x">
+                                                <rect key="frame" x="20" y="667" width="390" height="26.333333333333371"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YrM-i8-EP9">
+                                                <rect key="frame" x="20" y="708.33333333333337" width="390" height="44.666666666666629"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="systemGray6Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -262,15 +260,15 @@
                                             <constraint firstItem="s4I-h6-lqI" firstAttribute="top" secondItem="m42-3a-l4P" secondAttribute="bottom" constant="20" id="8GC-DQ-9uq"/>
                                             <constraint firstItem="50X-uR-QKb" firstAttribute="leading" secondItem="qkE-WM-QKA" secondAttribute="leading" constant="20" id="CHh-Jq-IK0"/>
                                             <constraint firstItem="WXx-JA-g3x" firstAttribute="leading" secondItem="qkE-WM-QKA" secondAttribute="leading" constant="20" id="EWQ-TK-UvW"/>
-                                            <constraint firstAttribute="trailing" secondItem="m42-3a-l4P" secondAttribute="trailing" constant="20" id="NPy-hM-6ay"/>
+                                            <constraint firstAttribute="trailing" secondItem="m42-3a-l4P" secondAttribute="trailing" id="NPy-hM-6ay"/>
                                             <constraint firstAttribute="trailing" secondItem="YrM-i8-EP9" secondAttribute="trailing" constant="20" id="Nel-0f-gWu"/>
                                             <constraint firstItem="Al1-m5-LH2" firstAttribute="top" secondItem="qkE-WM-QKA" secondAttribute="top" id="OGw-Hc-qGL"/>
-                                            <constraint firstItem="m42-3a-l4P" firstAttribute="top" secondItem="Al1-m5-LH2" secondAttribute="bottom" constant="20" id="PKK-Pm-wKc"/>
+                                            <constraint firstItem="m42-3a-l4P" firstAttribute="top" secondItem="Al1-m5-LH2" secondAttribute="bottom" constant="10" id="PKK-Pm-wKc"/>
                                             <constraint firstItem="ebi-td-CwS" firstAttribute="centerY" secondItem="if8-sz-Zgo" secondAttribute="centerY" id="RBu-7n-OzV"/>
                                             <constraint firstItem="ebi-td-CwS" firstAttribute="centerY" secondItem="Al1-m5-LH2" secondAttribute="centerY" id="SFg-E8-Ivt"/>
                                             <constraint firstItem="s4I-h6-lqI" firstAttribute="leading" secondItem="qkE-WM-QKA" secondAttribute="leading" constant="20" id="WKE-FA-e0w"/>
                                             <constraint firstItem="YrM-i8-EP9" firstAttribute="top" secondItem="WXx-JA-g3x" secondAttribute="bottom" constant="15" id="aki-fm-gqu"/>
-                                            <constraint firstItem="m42-3a-l4P" firstAttribute="leading" secondItem="qkE-WM-QKA" secondAttribute="leading" constant="20" id="dpN-Xp-PxZ"/>
+                                            <constraint firstItem="m42-3a-l4P" firstAttribute="leading" secondItem="qkE-WM-QKA" secondAttribute="leading" id="dpN-Xp-PxZ"/>
                                             <constraint firstItem="50X-uR-QKb" firstAttribute="top" secondItem="s4I-h6-lqI" secondAttribute="bottom" constant="15" id="eR6-i3-Tne"/>
                                             <constraint firstItem="ebi-td-CwS" firstAttribute="centerX" secondItem="qkE-WM-QKA" secondAttribute="centerX" id="gDM-3b-mE8"/>
                                             <constraint firstAttribute="trailing" secondItem="50X-uR-QKb" secondAttribute="trailing" constant="20" id="j2c-EU-axC"/>
@@ -278,7 +276,7 @@
                                             <constraint firstItem="Al1-m5-LH2" firstAttribute="leading" secondItem="qkE-WM-QKA" secondAttribute="leading" id="o7V-Cz-qsh"/>
                                             <constraint firstItem="WXx-JA-g3x" firstAttribute="top" secondItem="50X-uR-QKb" secondAttribute="bottom" constant="15" id="onh-b9-f4i"/>
                                             <constraint firstItem="YrM-i8-EP9" firstAttribute="leading" secondItem="qkE-WM-QKA" secondAttribute="leading" constant="20" id="phY-fU-lbU"/>
-                                            <constraint firstAttribute="bottom" secondItem="YrM-i8-EP9" secondAttribute="bottom" id="upI-Cx-JQD"/>
+                                            <constraint firstAttribute="bottom" secondItem="YrM-i8-EP9" secondAttribute="bottom" constant="50" id="upI-Cx-JQD"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -325,11 +323,11 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.square" catalog="system" width="128" height="114"/>
         <image name="square" catalog="system" width="128" height="114"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

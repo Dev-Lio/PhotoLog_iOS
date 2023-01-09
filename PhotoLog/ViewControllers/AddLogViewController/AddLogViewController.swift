@@ -15,6 +15,7 @@ class AddLogViewController: UIViewController, UINavigationControllerDelegate {
         
         setImageTouchEvent()
         setKeyboardNotification()
+        setTextviewPlaceholder()
     }
     
     @IBAction func goBack(_ sender: Any) {
@@ -22,7 +23,7 @@ class AddLogViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     @IBAction func addImageLog(_ sender: Any) {
-        let alert = UIAlertController(title: "게시글 작성", message: "새 글이 작성되었습니다", preferredStyle: .alert)
+        let alert = UIAlertController(title: "새 기록 작성", message: "새로운 기록이 저장되었습니다", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "확인", style: .cancel))
         self.present(alert, animated: true)
     }
@@ -30,6 +31,7 @@ class AddLogViewController: UIViewController, UINavigationControllerDelegate {
     // Hide Keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+        contentTextView.resignFirstResponder()
     }
 }
 
@@ -51,39 +53,63 @@ extension AddLogViewController: UIImagePickerControllerDelegate {
         picker.delegate = self // 델리게이트 지정
         present(picker, animated: true)
     }
-    
+        
     // 이미지 피커에서 이미지를 선택하지 않고 취소했을 때 호출되는 메소드
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true)
-        // 이미지 선택 취소 알림 창 호출
-//        self.dismiss(animated: true) { () in
-//            let alert = UIAlertController(title: "", message: "이미지 선택이 취소되었습니다.", preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "확인", style: .cancel))
-//            self.present(alert, animated: true)
-//        }
     }
+    
     // 이미지 피커에서 이미지를 선택했을 때 호출되는 메소드
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
-        let img = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
-        self.addImageView.image = img
-        
+        let selectedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
+        self.addImageView.image = selectedImage
         dismiss(animated: true)
-        
         showInputBox()
-        // 아래 방식 사용 시 이미지 선택 창이 닫히고 이미지 세팅되서 UI상으로 안이쁘다
-//        picker.dismiss(animated: true) { () in
-//            // 이미지를 이미지 뷰에 표시
-//            let img = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
-//            self.addImageView.image = img
-//        }
     }
     
     func showInputBox() {
+        scrollView.isScrollEnabled = true
+        scrollView.scrollToBottom(animated: true)
         titleLabel.isHidden = false
         titleTextField.isHidden = false
         contentLabel.isHidden = false
         contentTextView.isHidden = false
+    }
+}
+
+// MARK : ScrollView Move Bottom
+extension UIScrollView {
+    func scrollToBottom(animated: Bool) {
+        if self.contentSize.height < self.bounds.size.height { return }
+        let bottomOffset = CGPoint(x: 0, y: self.contentSize.height - self.bounds.size.height)
+        self.setContentOffset(bottomOffset, animated: animated)
+    }
+}
+
+// MARK : Textview Placeholder
+extension AddLogViewController: UITextViewDelegate {
+    
+    func setTextviewPlaceholder() {
+        //textview에 delegate 상속
+        contentTextView.delegate = self
+        //처음 화면이 로드되었을 때 플레이스 홀더처럼 보이게끔 만들어주기
+        contentTextView.text = "오늘의 기록을 남겨주세요"
+        contentTextView.textColor = UIColor.lightGray
+        //텍스트뷰가 구분되게끔 테두리를 주도록 하겠습니다.
+        contentTextView.layer.borderWidth = 1
+        contentTextView.layer.borderColor = UIColor.white.cgColor
+    }
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if contentTextView.text.isEmpty {
+            contentTextView.text =  "오늘의 기록을 남겨주세요"
+            contentTextView.textColor = UIColor.lightGray
+        }
+    }
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if contentTextView.textColor == UIColor.lightGray {
+            contentTextView.text = nil
+            contentTextView.textColor = UIColor.white
+        }
     }
 }
 
