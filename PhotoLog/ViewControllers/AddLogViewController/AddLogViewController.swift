@@ -1,5 +1,7 @@
 
 import UIKit
+import RealmSwift
+import Realm
 
 class AddLogViewController: UIViewController, UINavigationControllerDelegate {
  
@@ -20,13 +22,67 @@ class AddLogViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     @IBAction func goBack(_ sender: Any) {
-        dismiss(animated: true)
+//        dismiss(animated: true)
+        readAllRealm()
     }
     
     @IBAction func addImageLog(_ sender: Any) {
-        let alert = UIAlertController(title: "새 기록 작성", message: "새로운 기록이 저장되었습니다", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "확인", style: .cancel))
-        self.present(alert, animated: true)
+//        let alert = UIAlertController(title: "새 기록 작성", message: "새로운 기록이 저장되었습니다", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "확인", style: .cancel))
+//        self.present(alert, animated: true)
+        createRealm()
+    }
+    
+    func getNowDate() -> Date {
+        let today = Date()
+        let timezone = TimeZone.autoupdatingCurrent
+        let secondsFromGMT = timezone.secondsFromGMT(for: today)
+        let localizedDate = today.addingTimeInterval(TimeInterval(secondsFromGMT))
+        return localizedDate
+    }
+    
+    func createRealm(){
+        let realm = try! Realm()
+        let newPhotoLog = RealmData(
+            date: getNowDate(),
+            image: "image"+String((0...1000).randomElement()!),
+            title: "title"+String((0...1000).randomElement()!),
+            content: "content"+String((0...1000).randomElement()!))
+        try! realm.write {
+            realm.add(newPhotoLog)
+            print("Added data")
+            print("path= \(Realm.Configuration.defaultConfiguration.fileURL!)")
+        }
+    }
+    
+    func readAllRealm(){
+        let realm = try! Realm()
+        let Logs = realm.objects(RealmData.self)
+        print(Logs)
+    }
+    
+    func readSelectedRealm(){
+        let realm = try! Realm()
+        let selectedRealm = realm.object(ofType: RealmData.self, forPrimaryKey: "63bd4f293d468b8534db23b7")
+        print(selectedRealm as Any)
+    }
+    
+    func updateRealm(){
+        
+    }
+    
+    func deleteAllRealm(){
+        let realm = try! Realm()
+        try! realm.write{
+            realm.deleteAll()
+        }
+    }
+    
+    func deleteSelectedRealm(){
+        let realm = try! Realm()
+        try! realm.write{
+            realm.deleteAll()
+        }
     }
    
     // Hide Keyboard
@@ -48,11 +104,12 @@ extension AddLogViewController: UIImagePickerControllerDelegate {
     
     // 이미지 피커 컨트롤러 생성
     @objc func pickImage() {
-        let picker = UIImagePickerController()
-        picker.sourceType = .photoLibrary // 이미지 소스로 사진 라이브러리 선택
-        picker.allowsEditing = true // 이미지 편집 기능 On
-        picker.delegate = self // 델리게이트 지정
-        present(picker, animated: true)
+        deleteAllRealm()
+//        let picker = UIImagePickerController()
+//        picker.sourceType = .photoLibrary // 이미지 소스로 사진 라이브러리 선택
+//        picker.allowsEditing = true // 이미지 편집 기능 On
+//        picker.delegate = self // 델리게이트 지정
+//        present(picker, animated: true)
     }
         
     // 이미지 피커에서 이미지를 선택하지 않고 취소했을 때 호출되는 메소드

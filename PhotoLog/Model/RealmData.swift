@@ -9,7 +9,7 @@ import RealmSwift
 
 class RealmData: Object {
     
-    @Persisted(primaryKey: true) var _id: ObjectId
+    @Persisted(primaryKey: true) var id: ObjectId
     @Persisted var date: Date = Date()
     @Persisted var image: String = ""
     @Persisted var title: String = ""
