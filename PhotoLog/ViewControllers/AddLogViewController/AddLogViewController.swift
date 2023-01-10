@@ -9,6 +9,7 @@ class AddLogViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var contentTextView: UITextView!
+    @IBOutlet weak var contentView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,7 +94,7 @@ extension AddLogViewController: UITextViewDelegate {
         //textview에 delegate 상속
         contentTextView.delegate = self
         //처음 화면이 로드되었을 때 플레이스 홀더처럼 보이게끔 만들어주기
-        contentTextView.text = "오늘의 기록을 남겨주세요"
+        contentTextView.text = "오늘의 기록을 남겨주세요\n\n\n"
         contentTextView.textColor = UIColor.lightGray
         //텍스트뷰가 구분되게끔 테두리를 주도록 하겠습니다.
         contentTextView.layer.borderWidth = 1
@@ -101,7 +102,7 @@ extension AddLogViewController: UITextViewDelegate {
     }
     func textViewDidEndEditing(_ textView: UITextView) {
         if contentTextView.text.isEmpty {
-            contentTextView.text =  "오늘의 기록을 남겨주세요"
+            contentTextView.text = "오늘의 기록을 남겨주세요\n\n\n"
             contentTextView.textColor = UIColor.lightGray
         }
     }

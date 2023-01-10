@@ -13,6 +13,7 @@
 		32457001291100AD005BDAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32457000291100AD005BDAEC /* Assets.xcassets */; };
 		32457004291100AD005BDAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32457002291100AD005BDAEC /* LaunchScreen.storyboard */; };
 		325A8626296A90CB00486E77 /* AddLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325A8625296A90CB00486E77 /* AddLogViewController.swift */; };
+		325A862B296D38D400486E77 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325A862A296D38D400486E77 /* RealmData.swift */; };
 		3272EAFC294E6F1F0097A3C3 /* AppleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EAFB294E6F1F0097A3C3 /* AppleLoginViewController.swift */; };
 		3272EB09294E6FDF0097A3C3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EB08294E6FDF0097A3C3 /* MainTableViewController.swift */; };
 		3272EB0B294E6FF50097A3C3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272EB0A294E6FF40097A3C3 /* MainViewController.swift */; };
@@ -35,6 +36,7 @@
 		32457003291100AD005BDAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32457005291100AD005BDAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		325A8625296A90CB00486E77 /* AddLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLogViewController.swift; sourceTree = "<group>"; };
+		325A862A296D38D400486E77 /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
 		3272EAFB294E6F1F0097A3C3 /* AppleLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginViewController.swift; sourceTree = "<group>"; };
 		3272EB08294E6FDF0097A3C3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		3272EB0A294E6FF40097A3C3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		32456FF6291100AC005BDAEC /* PhotoLog */ = {
 			isa = PBXGroup;
 			children = (
+				325A8629296D38B400486E77 /* Model */,
 				3285C7B6294EFBD200F92A59 /* View */,
 				3272EB04294E6F870097A3C3 /* ViewControllers */,
 				32964DF42924855C0054621E /* PhotoLog.entitlements */,
@@ -103,6 +106,14 @@
 				325A8625296A90CB00486E77 /* AddLogViewController.swift */,
 			);
 			path = AddLogViewController;
+			sourceTree = "<group>";
+		};
+		325A8629296D38B400486E77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				325A862A296D38D400486E77 /* RealmData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3272EB04294E6F870097A3C3 /* ViewControllers */ = {
@@ -321,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32C78653296656C800C919CE /* DetailTableViewCell.swift in Sources */,
+				325A862B296D38D400486E77 /* RealmData.swift in Sources */,
 				3285C7BC294EFC1000F92A59 /* Rotatable.swift in Sources */,
 				3272EB09294E6FDF0097A3C3 /* MainTableViewController.swift in Sources */,
 				3272EB0B294E6FF50097A3C3 /* MainViewController.swift in Sources */,

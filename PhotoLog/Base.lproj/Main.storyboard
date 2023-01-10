@@ -305,6 +305,7 @@
                         <outlet property="addImageView" destination="m42-3a-l4P" id="d44-er-rai"/>
                         <outlet property="contentLabel" destination="WXx-JA-g3x" id="Z5x-iT-1Pa"/>
                         <outlet property="contentTextView" destination="YrM-i8-EP9" id="2JZ-GL-hFc"/>
+                        <outlet property="contentView" destination="qkE-WM-QKA" id="zfc-e4-q8a"/>
                         <outlet property="scrollView" destination="HT0-Wb-cSZ" id="7ow-dI-3lR"/>
                         <outlet property="titleLabel" destination="s4I-h6-lqI" id="Ca6-ZX-Kp0"/>
                         <outlet property="titleTextField" destination="50X-uR-QKb" id="SZw-ak-Cnf"/>

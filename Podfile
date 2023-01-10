@@ -8,5 +8,6 @@ target 'PhotoLog' do
   # Pods for PhotoLog
 
 pod 'expanding-collection'
+pod 'RealmSwift'
 
 end
