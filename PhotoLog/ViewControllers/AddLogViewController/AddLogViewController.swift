@@ -68,7 +68,22 @@ class AddLogViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     func updateRealm(){
+        let realm = try! Realm()
+        let Logs = realm.objects(RealmData.self)
         
+        let toUpdate = Logs[0]
+
+        try! realm.write {
+            toUpdate.image = "update image"
+            toUpdate.title = "update Title"
+            toUpdate.content = "update Content"
+        }
+
+        // or
+//        try! realm.write {
+//            // PrimaryKey가 있는 경우, 새로운 객체의 PK와 맞는 객체를 자동으로 업데이트
+//            realm.add(toUpdate, update: .modified)
+//        }
     }
     
     func deleteAllRealm(){
